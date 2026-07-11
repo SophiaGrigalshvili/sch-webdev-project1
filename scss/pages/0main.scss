@@ -94,6 +94,96 @@ header {
   }
 }
 
+footer {
+  padding: 5vw 2.6vw 2.4vw 2.6vw;
+  background-color: $bg-color-olive;
+  display: flex;
+  flex-direction: column;
+  color: $text-color-light;
+  align-items: center;
+  a {
+    text-decoration: none;
+    color: $text-color-light;
+    h1 {
+      font-family: $font-fancy;
+      font-size: $text-size-h1;
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 7vw);
+
+    font-family: $font-main;
+    width: 100%;
+
+    > h3 {
+      font-size: $text-size-p-alt;
+      font-weight: 400;
+    }
+
+    .contacttxt {
+      grid-row: 1;
+      grid-column: 1;
+    }
+
+    .followtxt {
+      grid-row: 1;
+      grid-column: 3;
+      text-align: end;
+    }
+
+    > div {
+      grid-row: 2;
+      grid-column: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+
+      row-gap: 0.5vw;
+      @extend %p-base;
+
+      .longp {
+        width: 33%;
+      }
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+
+      row-gap: 0.5vw;
+      @extend %p-base;
+    }
+
+    .infoul {
+      grid-row: 2;
+      grid-column: 2;
+      align-items: center;
+      justify-content: end;
+    }
+
+    .mediaul {
+      grid-row: 2;
+      grid-column: 3;
+      align-items: end;
+      justify-content: end;
+    }
+  }
+
+  > p {
+    @extend %p-base;
+    border-top: 0.06vw solid $text-color-light;
+    width: 100%;
+    text-align: center;
+
+    margin-top: 0.7vw;
+    padding-top: 1vw;
+  }
+}
+
 // scroll js property
 
 header.fixedToTop {
