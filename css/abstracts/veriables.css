@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "InstrumentSarif";
+  src: url(/scss/fonts/InstrumentSerif-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "PinyonScript";
+  src: url(/scss/fonts/PinyonScript-Regular.ttf);
+  font-weight: 700;
+}
+@keyframes circleappear {
+  from {
+    opacity: 100%;
+    border-width: 40vw;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+@keyframes opacityappear {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes textsquish {
+  from {
+    opacity: 40%;
+    transform: scaleY(30%);
+  }
+  to {
+    transform: scaleY(100%);
+  }
+}
+@keyframes textsquishdelay {
+  0% {
+    opacity: 0%;
+    transform: scaleY(30%);
+  }
+  20% {
+    opacity: 0%;
+    transform: scaleY(30%);
+  }
+  100% {
+    opacity: 100%;
+    transform: scaleY(100%);
+  }
+}
+@keyframes textsquishdelay2 {
+  0% {
+    opacity: 0%;
+    transform: scaleY(30%);
+  }
+  30% {
+    opacity: 0%;
+    transform: scaleY(30%);
+  }
+  100% {
+    opacity: 100%;
+    transform: scaleY(100%);
+  }
+}
+@keyframes slideinleft {
+  from {
+    transform: translateX(-110%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slideindown {
+  0% {
+    opacity: 0%;
+    transform: translateY(-25%);
+  }
+  20% {
+    opacity: 0%;
+    transform: translateY(-25%);
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes slideinup {
+  0% {
+    opacity: 0%;
+    transform: translateY(25%);
+  }
+  30% {
+    opacity: 0%;
+    transform: translateY(25%);
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes slideindowndelay {
+  0% {
+    opacity: 0%;
+    transform: translateY(-25%);
+  }
+  40% {
+    opacity: 0%;
+    transform: translateY(-25%);
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+/*# sourceMappingURL=veriables.css.map */

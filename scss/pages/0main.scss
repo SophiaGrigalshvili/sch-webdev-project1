@@ -1,0 +1,104 @@
+@use "../abstracts/veriables.scss" as *;
+@use "../abstracts/mixin.scss" as *;
+@use "../abstracts/base.scss" as *;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: $bg-color-dark;
+  padding: 0.9vw 1.5vw;
+  color: $text-color-light;
+
+  width: 100%;
+
+  z-index: 999;
+  position: fixed;
+
+  transition: 0.3s ease-in-out;
+
+  > a {
+    display: flex;
+    align-items: center;
+    img {
+      // width: 65%;
+      width: 4vw;
+      height: auto;
+    }
+  }
+
+  nav {
+    ul {
+      display: flex;
+      list-style: none;
+      align-items: center;
+      column-gap: 1vw;
+
+      a {
+        button {
+          @include btn-mx(
+            transparent,
+            $text-color-light,
+            0.4vw 1vw,
+            0.06vw solid $text-color-light,
+            3.2vw
+          );
+
+          p {
+            @extend %p-base;
+            color: $text-color-light;
+          }
+          &:hover {
+            p {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  column-gap: 18px;
+  i {
+    font-size: 1.6vw;
+  }
+  a {
+    text-decoration: none;
+    color: $text-color-light;
+    p {
+      @extend %p-base;
+
+      &:hover {
+        opacity: 70%;
+      }
+    }
+  }
+}
+
+// scroll js property
+
+header.fixedToTop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}

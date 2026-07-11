@@ -1,0 +1,13 @@
+@mixin btn-mx(
+  $mx-bgColor,
+  $mx-color,
+  $mx-padding,
+  $mx-border,
+  $mx-borderradius
+) {
+  background-color: $mx-bgColor;
+  color: $mx-color;
+  padding: $mx-padding;
+  border: $mx-border;
+  border-radius: $mx-borderradius;
+}

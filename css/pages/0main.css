@@ -1,0 +1,194 @@
+@font-face {
+  font-family: "InstrumentSarif";
+  src: url(/scss/fonts/InstrumentSerif-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "PinyonScript";
+  src: url(/scss/fonts/PinyonScript-Regular.ttf);
+  font-weight: 700;
+}
+@keyframes circleappear {
+  from {
+    opacity: 100%;
+    border-width: 40vw;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+@keyframes opacityappear {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes textsquish {
+  from {
+    opacity: 40%;
+    transform: scaleY(30%);
+  }
+  to {
+    transform: scaleY(100%);
+  }
+}
+@keyframes textsquishdelay {
+  0% {
+    opacity: 0%;
+    transform: scaleY(30%);
+  }
+  20% {
+    opacity: 0%;
+    transform: scaleY(30%);
+  }
+  100% {
+    opacity: 100%;
+    transform: scaleY(100%);
+  }
+}
+@keyframes textsquishdelay2 {
+  0% {
+    opacity: 0%;
+    transform: scaleY(30%);
+  }
+  30% {
+    opacity: 0%;
+    transform: scaleY(30%);
+  }
+  100% {
+    opacity: 100%;
+    transform: scaleY(100%);
+  }
+}
+@keyframes slideinleft {
+  from {
+    transform: translateX(-110%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slideindown {
+  0% {
+    opacity: 0%;
+    transform: translateY(-25%);
+  }
+  20% {
+    opacity: 0%;
+    transform: translateY(-25%);
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes slideinup {
+  0% {
+    opacity: 0%;
+    transform: translateY(25%);
+  }
+  30% {
+    opacity: 0%;
+    transform: translateY(25%);
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes slideindowndelay {
+  0% {
+    opacity: 0%;
+    transform: translateY(-25%);
+  }
+  40% {
+    opacity: 0%;
+    transform: translateY(-25%);
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+header nav ul a button p, .login a p {
+  font-family: "InstrumentSarif";
+  font-size: 1.27vw;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1d1c19;
+  padding: 0.9vw 1.5vw;
+  color: #fffdce;
+  width: 100%;
+  z-index: 999;
+  position: fixed;
+  transition: 0.3s ease-in-out;
+}
+header > a {
+  display: flex;
+  align-items: center;
+}
+header > a img {
+  width: 4vw;
+  height: auto;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  column-gap: 1vw;
+}
+header nav ul a button {
+  background-color: transparent;
+  color: #fffdce;
+  padding: 0.4vw 1vw;
+  border: 0.06vw solid #fffdce;
+  border-radius: 3.2vw;
+}
+header nav ul a button p {
+  color: #fffdce;
+}
+header nav ul a button:hover p {
+  text-decoration: underline;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  column-gap: 18px;
+}
+.login i {
+  font-size: 1.6vw;
+}
+.login a {
+  text-decoration: none;
+  color: #fffdce;
+}
+.login a p:hover {
+  opacity: 70%;
+}
+
+header.fixedToTop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/*# sourceMappingURL=0main.css.map */

@@ -1,0 +1,455 @@
+@use "../abstracts/veriables.scss" as *;
+@use "../abstracts/mixin.scss" as *;
+@use "../abstracts/base.scss" as *;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  nav {
+    ul {
+      li {
+        &:nth-child(1) {
+          a {
+            button {
+              p {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  padding-top: 5.7vw;
+  background-color: $bg-color-dark;
+}
+
+.herosect {
+  display: flex;
+  justify-content: center;
+
+  background-color: $bg-color-dark;
+  padding: 3vw 0 8.7vw 0;
+
+  position: relative;
+  overflow: hidden;
+
+  .animwrapper {
+    width: 46%;
+    height: 47vw;
+
+    border: 0.06vw solid $bg-color-dark;
+    scale: calc(110%);
+    background-color: transparent;
+
+    z-index: 2;
+    border-radius: 100%;
+    animation: circleappear 2s ease-in-out;
+    position: absolute;
+  }
+
+  .imgdiv {
+    height: 37vw;
+    width: 32%;
+    overflow: hidden;
+    border-radius: 49% 49% 0 0;
+    z-index: 1;
+
+    img {
+      animation: none;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      z-index: 1;
+      animation: opacityappear 2.5s;
+    }
+  }
+
+  .textdiv {
+    color: $text-color-light;
+    position: absolute;
+    top: 22%;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    z-index: 3;
+
+    h1 {
+      font-family: $font-fancy;
+      font-size: $text-size-h1;
+
+      // position: absolute;
+      // top: 0;
+      // left: 4.6%;
+
+      text-align: center;
+
+      animation: textsquish 1s;
+    }
+
+    h3 {
+      @extend %h3-base;
+
+      position: relative;
+      // top: 17.3vw;
+      bottom: 4.7vw;
+      text-align: center;
+
+      animation: textsquishdelay 1.7s;
+    }
+
+    > div {
+      align-items: flex-start;
+    }
+
+    a {
+      position: relative;
+      bottom: 4vw;
+      // top: 22vw;
+      // left: 42.3%;
+
+      animation: textsquishdelay2 1.7s;
+
+      button {
+        @include btn-mx(
+          $text-color-light,
+          $text-color-dark,
+          0.375vw 2.1vw,
+          none,
+          3.1vw
+        );
+
+        cursor: pointer;
+        p {
+          @extend %p-base;
+        }
+      }
+
+      &:hover {
+        button {
+          p {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+.meetsect {
+  background-color: $bg-color-yellow;
+  padding: 10vw 1.4% 1.5vw 1.4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  row-gap: 7.8vw;
+  position: relative;
+
+  overflow: hidden;
+
+  .introtext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1vw;
+    color: $text-color-dark;
+    z-index: 3;
+
+    h3 {
+      font-family: $font-main;
+      font-size: $text-size-h3-alt;
+      letter-spacing: 0.06vw;
+      font-weight: 100;
+
+      animation: textsquish 0.7s;
+    }
+
+    p {
+      @extend %h3-base;
+      text-align: center;
+      width: 90%;
+
+      animation: textsquishdelay2 0.7s;
+    }
+  }
+
+  .animwrapper {
+    background-color: transparent;
+    border: 0.06vw solid $bg-color-yellow;
+    border-radius: 100%;
+    width: 30%;
+    height: 30vw;
+    scale: calc(130%);
+
+    top: 28%;
+    align-self: center;
+    position: absolute;
+    z-index: 2;
+
+    animation: circleappear 2s ease-in-out;
+    opacity: 0;
+  }
+  > img {
+    position: relative;
+    z-index: 1;
+    width: 20%;
+  }
+
+  .bigcard {
+    z-index: 3;
+    background-color: $bg-color-dark;
+    width: 100%;
+    display: flex;
+    padding: 1.4vw;
+
+    animation: slideinleft 2s;
+    img {
+      width: 50%;
+    }
+
+    > div {
+      padding: 0.9vw 2.2vw;
+      height: inherit;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      height: 54vw;
+      color: $text-color-light;
+      width: 50%;
+
+      h2 {
+        @extend %h2-base;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+
+        row-gap: 1.8vw;
+        align-items: flex-start;
+        p {
+          @extend %p-base-alt;
+          padding-left: 0.3vw;
+        }
+
+        a {
+          button {
+            @include btn-mx(
+              $text-color-light,
+              $text-color-dark,
+              0.375vw 3vw,
+              none,
+              3.1vw
+            );
+            cursor: pointer;
+            p {
+              @extend %p-base;
+            }
+          }
+
+          &:hover {
+            button {
+              p {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.readerssect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1vw;
+
+  padding: 5vw 0 6vw 0;
+  color: $text-color-light;
+  position: relative;
+
+  > h3 {
+    font-family: $font-main;
+    font-size: $text-size-h3;
+    letter-spacing: 0.06vw;
+    font-weight: 100;
+
+    animation: textsquish 0.7s;
+
+    z-index: 8;
+  }
+
+  .griddiv {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: repeat(3, 16vw);
+
+    column-gap: 2%;
+
+    overflow: hidden;
+
+    z-index: 5;
+
+    > div {
+      background-color: $bg-color-olive;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+
+      row-gap: 2.7vw;
+
+      img {
+        width: 24%;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1vw;
+
+        .review {
+          font-family: $font-main;
+          font-size: 2vw;
+        }
+
+        .author {
+          @extend %p-base;
+        }
+      }
+    }
+
+    .griditem {
+      border-radius: 0 0 47% 47%;
+      padding: 3vw 1.3vw 7vw 1.3vw;
+    }
+
+    .griditemalt {
+      border-radius: 47% 47% 0 0;
+      padding: 7vw 1.3vw 2.2vw 1.3vw;
+    }
+
+    .griditem1 {
+      grid-row: 2/4;
+      grid-column: 1/2;
+
+      animation: slideindown 1.2s;
+    }
+
+    .griditem2 {
+      grid-row: 1/3;
+      grid-column: 2/3;
+      justify-content: space-between;
+      padding-bottom: 2.4vw;
+
+      animation: slideinup 1.5s;
+    }
+
+    .griditem3 {
+      grid-row: 2/4;
+      grid-column: 3/4;
+
+      animation: slideindowndelay 1.7s;
+    }
+  }
+}
+
+.formsect {
+  background-color: $bg-color-olive;
+  display: flex;
+  color: $text-color-light;
+  padding: 3.2vw 2.2%;
+  column-gap: 2%;
+  > div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 10.7vw;
+
+    h3 {
+      font-family: $font-main;
+      font-size: $text-size-p-alt;
+      font-weight: 300;
+    }
+    p {
+      width: 70%;
+      @extend %p-base;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    @extend %p-base;
+    width: 50%;
+
+    .emaileneter {
+      width: 100%;
+      background-color: transparent;
+      border: none;
+      border-bottom: 0.06vw solid $text-color-light;
+      outline: none;
+      padding: 0.7vw 1vw;
+      color: $text-color-light;
+      font-size: $text-size-main;
+      font-family: $font-main;
+      caret-color: $text-color-light;
+    }
+
+    > div {
+      margin: 1vw 0;
+      display: flex;
+      column-gap: 1vw;
+      input,
+      label {
+        cursor: pointer;
+      }
+    }
+
+    .submit {
+      width: 100%;
+      @extend %p-base;
+
+      @include btn-mx(
+        $text-color-light,
+        $text-color-dark,
+        0.5vw,
+        0.06vw solid $text-color-light,
+        3.1vw
+      );
+
+      transition: 0.25s;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $bg-color-olive;
+        font-weight: 700;
+        color: $text-color-light;
+      }
+    }
+  }
+}

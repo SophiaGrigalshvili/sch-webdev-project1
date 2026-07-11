@@ -1,0 +1,24 @@
+@use "../abstracts/veriables.scss" as *;
+
+%h2-base {
+  font-family: $font-main;
+  font-size: $text-size-h2;
+  font-weight: 400;
+}
+
+%h3-base {
+  font-family: $font-main;
+  font-size: $text-size-h3;
+  letter-spacing: 0.06vw;
+}
+
+%p-base-alt {
+  font-family: $font-main;
+  font-size: $text-size-p-alt;
+  letter-spacing: 0.06vw;
+}
+
+%p-base {
+  font-family: $font-main;
+  font-size: $text-size-main;
+}
