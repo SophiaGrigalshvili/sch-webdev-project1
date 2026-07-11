@@ -405,6 +405,7 @@ main {
   justify-content: space-between;
   align-items: flex-start;
   height: 10.7vw;
+  animation: textsquish 0.7s;
 }
 .formsect > div h3 {
   font-family: "InstrumentSarif";
@@ -418,6 +419,7 @@ main {
   display: flex;
   flex-direction: column;
   width: 50%;
+  animation: textsquishdelay 0.7s;
 }
 .formsect form .emaileneter {
   width: 100%;

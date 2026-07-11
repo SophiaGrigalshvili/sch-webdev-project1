@@ -389,6 +389,7 @@ main {
     align-items: flex-start;
     height: 10.7vw;
 
+    animation: textsquish 0.7s;
     h3 {
       font-family: $font-main;
       font-size: $text-size-p-alt;
@@ -406,6 +407,7 @@ main {
     @extend %p-base;
     width: 50%;
 
+    animation: textsquishdelay 0.7s;
     .emaileneter {
       width: 100%;
       background-color: transparent;

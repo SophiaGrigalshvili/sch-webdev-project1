@@ -199,6 +199,7 @@ footer a {
 footer a h1 {
   font-family: "PinyonScript";
   font-size: 17.5vw;
+  animation: textsquishdelay2 1.2s;
 }
 footer .grid {
   display: grid;
