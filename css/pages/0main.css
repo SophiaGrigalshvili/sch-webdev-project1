@@ -109,7 +109,7 @@
     opacity: 100%;
   }
 }
-header nav ul a button p, .login a p, footer .grid > div, footer .grid ul, footer > p {
+header ul a button p, header .login a p, footer .grid > div, footer .grid ul, footer > p {
   font-family: "InstrumentSarif";
   font-size: 1.27vw;
 }
@@ -148,40 +148,46 @@ header > a img {
   width: 4vw;
   height: auto;
 }
-header nav ul {
+header ul {
   display: flex;
   list-style: none;
   align-items: center;
   column-gap: 1vw;
 }
-header nav ul a button {
+header ul a button {
   background-color: transparent;
   color: #fffdce;
   padding: 0.4vw 1vw;
   border: 0.06vw solid #fffdce;
   border-radius: 3.2vw;
+  cursor: pointer;
 }
-header nav ul a button p {
+header ul a button p {
   color: #fffdce;
 }
-header nav ul a button:hover p {
+header ul a button:hover p {
   text-decoration: underline;
 }
-
-.login {
+header .login {
   display: flex;
   align-items: center;
   column-gap: 18px;
 }
-.login i {
+header .login i {
   font-size: 1.6vw;
 }
-.login a {
+header .login a {
   text-decoration: none;
   color: #fffdce;
 }
-.login a p:hover {
+header .login a p:hover {
   opacity: 70%;
+}
+header > .fa-bars {
+  display: none;
+}
+header .mobilever {
+  display: none;
 }
 
 footer {
@@ -258,6 +264,71 @@ footer > p {
   padding-top: 1vw;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    padding: 0 0 0 3.8vw;
+  }
+  header .desktopver {
+    display: none;
+  }
+  header > a img {
+    width: 6vw;
+    z-index: 2;
+  }
+  header > .fa-bars {
+    display: block;
+    font-size: 3vw;
+    transition: 0.2s;
+    text-align: end;
+    background-color: #1d1c19;
+    width: 100%;
+    padding: 2.45vw 3.8vw;
+    cursor: pointer;
+    z-index: 2;
+  }
+  header > .fa-bars:hover {
+    color: rgba(255, 253, 206, 0.6549019608);
+  }
+  header .mobilever {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.3vw;
+    background-color: #1d1c19;
+    width: 100%;
+    align-items: flex-end;
+    padding: 0 2.8vw 1.4vw 0;
+    position: absolute;
+    top: -37vw;
+    right: 0;
+    transition: 0.8s;
+    z-index: 1;
+  }
+  header .mobilever ul {
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 0.8vw;
+  }
+  header .mobilever p,
+  header .mobilever i {
+    font-size: 2.5vw;
+  }
+  header .mobilever .login {
+    padding-right: 1.3vw;
+  }
+  header .mobilever .login .fa-circle-user {
+    font-size: 2.8vw;
+    display: none;
+  }
+  header .mobilever .login a p {
+    font-size: 2.5vw;
+  }
+  header .mobilever button {
+    padding: 0.6vw 1.6vw;
+  }
+  .mobilever.active {
+    top: 7.5vw;
+  }
+}
 header.fixedToTop {
   position: fixed;
   top: 0;

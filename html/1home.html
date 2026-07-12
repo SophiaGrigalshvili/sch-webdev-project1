@@ -19,7 +19,7 @@
           alt="a wheel with "
       /></a>
 
-      <nav>
+      <nav class="desktopver">
         <ul>
           <li>
             <a href="1home.html">
@@ -59,9 +59,57 @@
         </ul>
       </nav>
 
-      <div class="login">
+      <div class="login desktopver">
         <i class="fa-solid fa-circle-user"></i>
         <a href=""><p>Log In</p></a>
+      </div>
+
+      <i class="fa-solid fa-bars"></i>
+
+      <div class="mobilever">
+        <div class="login">
+          <i class="fa-solid fa-circle-user"></i> <a href=""><p>Log In</p></a>
+        </div>
+
+        <nav>
+          <ul>
+            <li>
+              <a href="1home.html">
+                <button>
+                  <p>Home</p>
+                </button>
+              </a>
+            </li>
+            <li>
+              <a href="2about.html">
+                <button>
+                  <p>About</p>
+                </button>
+              </a>
+            </li>
+            <li>
+              <a href="3books.html">
+                <button>
+                  <p>Books</p>
+                </button>
+              </a>
+            </li>
+            <li>
+              <a href="4events.html">
+                <button>
+                  <p>Events</p>
+                </button>
+              </a>
+            </li>
+            <li>
+              <a href="5contact.html">
+                <button>
+                  <p>Contact</p>
+                </button>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
 
@@ -231,6 +279,7 @@
     <!-- ------------- -->
 
     <script>
+      // header scroll thingie
       var prevScrollpos = window.pageYOffset;
 
       var headerDiv = document.querySelector("header");
@@ -241,7 +290,7 @@
 
         if (prevScrollpos <= currentScrollPos) {
           headerDiv.classList.remove("fixedToTop");
-          headerDiv.style.top = "-5.7vw";
+          headerDiv.style.top = "-8vw";
         } else {
           headerDiv.classList.add("fixedToTop");
           headerDiv.style.top = "0";
@@ -249,6 +298,14 @@
 
         prevScrollpos = currentScrollPos;
       };
+
+      // responsive nav menu
+      const burgermenu = document.querySelector(".fa-bars");
+      const headernav = document.querySelector(".mobilever");
+
+      burgermenu.addEventListener("click", () => {
+        headernav.classList.toggle("active");
+      });
     </script>
   </body>
 </html>
