@@ -616,3 +616,192 @@ main {
     }
   }
 }
+
+@media (max-width: 768px) {
+  .herosect {
+    height: 132vw;
+    align-items: center;
+    padding-top: 1.8vw !important;
+
+    .animwrapper {
+      scale: calc(290%);
+    }
+
+    .imgdiv,
+    img {
+      width: 65%;
+      height: 80vw;
+    }
+
+    .textdiv {
+      top: 30%;
+      height: 81vw;
+
+      h1 {
+        position: relative;
+        bottom: 6vw;
+        width: 66%;
+      }
+
+      h3 {
+        font-size: $resp2-text-size-h3 !important;
+        font-weight: 300;
+        bottom: 1.5vw;
+      }
+
+      a {
+        button {
+          p {
+            font-size: $resp2-text-size-main !important;
+          }
+        }
+      }
+    }
+  }
+
+  .meetsect {
+    padding: 10vw 2% 1.5vw 2%;
+
+    .introtext {
+      row-gap: 3.8vw;
+      h3 {
+        font-size: $resp2-text-size-main !important;
+        scale: calc(125%);
+      }
+
+      p {
+        font-size: $resp2-text-size-h3;
+        scale: calc(90%);
+        width: 100%;
+      }
+    }
+
+    .animwrapper {
+      scale: calc(420%);
+      top: 44%;
+    }
+
+    > img {
+      width: 65%;
+      height: 60vw;
+      object-fit: cover;
+      margin: 15vw 0;
+    }
+
+    .bigcard {
+      flex-direction: column-reverse;
+      align-items: center;
+      width: 91%;
+      img {
+        width: 100%;
+        padding: 1.7vw;
+      }
+
+      > div {
+        padding: 1.7vw 2.1vw;
+        height: 46vw;
+
+        h2 {
+          font-size: $resp2-text-size-h2 !important;
+        }
+
+        div {
+          p {
+            font-size: $resp2-text-size-main !important;
+          }
+
+          a {
+            button {
+              p {
+                font-size: $resp2-text-size-main !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .readerssect {
+    padding: 5vw 6.3% 6vw 6.3%;
+    > h3 {
+      font-size: $resp2-text-size-h2 !important;
+    }
+
+    .griddiv {
+      grid-template-columns: repeat(5, 20%) !important;
+      grid-template-rows: repeat(3, 64vw) !important;
+      width: 100%;
+      padding: 3%;
+
+      .griditem2 {
+        grid-column: 1/4 !important;
+        grid-row: 1/2 !important;
+      }
+
+      .griditem1 {
+        grid-column: 2/5 !important;
+        grid-row: 2/3 !important;
+        border-radius: 0 !important;
+        padding-top: 6vw;
+
+        animation: opacityappear2 1.9s;
+        border-radius: 0 16vw 0 16vw !important;
+      }
+
+      .griditem3 {
+        grid-column: 3/6 !important;
+        grid-row: 3 !important;
+      }
+
+      div {
+        padding: 2%;
+        .review {
+          font-size: $resp2-text-size-p-alt !important;
+        }
+
+        .author {
+          font-size: $resp2-text-size-main !important;
+        }
+      }
+    }
+  }
+
+  .formsect {
+    flex-direction: column;
+    padding: 8.4vw 5.8% 16.8vw 5.8% !important;
+
+    row-gap: 25vw;
+
+    > div {
+      width: 100%;
+
+      h3 {
+        font-size: $resp2-text-size-h3 !important;
+      }
+      p {
+        font-size: $resp2-text-size-main;
+      }
+    }
+
+    form {
+      width: 100%;
+      font-size: $resp2-text-size-main !important;
+      row-gap: 3.4vw;
+
+      .emaileneter {
+        font-size: $resp2-text-size-main !important;
+      }
+
+      label {
+        font-size: $resp2-text-size-main !important;
+      }
+
+      .submit {
+        font-size: $resp2-text-size-main !important;
+        padding: 1.5vw;
+        border-radius: 50vw;
+      }
+    }
+  }
+}

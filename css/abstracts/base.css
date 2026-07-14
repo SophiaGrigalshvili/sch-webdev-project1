@@ -25,6 +25,18 @@
     opacity: 100%;
   }
 }
+@keyframes opacityappear2 {
+  0% {
+    opacity: 0%;
+  }
+  30% {
+    opacity: 0%;
+    scale: 90%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
 @keyframes textsquish {
   from {
     opacity: 40%;

@@ -25,6 +25,18 @@
     opacity: 100%;
   }
 }
+@keyframes opacityappear2 {
+  0% {
+    opacity: 0%;
+  }
+  30% {
+    opacity: 0%;
+    scale: 90%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
 @keyframes textsquish {
   from {
     opacity: 40%;
@@ -582,6 +594,152 @@ main {
   }
   .formsect form .submit {
     font-size: 2.3vw !important;
+  }
+}
+@media (max-width: 768px) {
+  .herosect {
+    height: 132vw;
+    align-items: center;
+    padding-top: 1.8vw !important;
+  }
+  .herosect .animwrapper {
+    scale: 290%;
+  }
+  .herosect .imgdiv,
+  .herosect img {
+    width: 65%;
+    height: 80vw;
+  }
+  .herosect .textdiv {
+    top: 30%;
+    height: 81vw;
+  }
+  .herosect .textdiv h1 {
+    position: relative;
+    bottom: 6vw;
+    width: 66%;
+  }
+  .herosect .textdiv h3 {
+    font-size: 7.4vw !important;
+    font-weight: 300;
+    bottom: 1.5vw;
+  }
+  .herosect .textdiv a button p {
+    font-size: 4.1vw !important;
+  }
+  .meetsect {
+    padding: 10vw 2% 1.5vw 2%;
+  }
+  .meetsect .introtext {
+    row-gap: 3.8vw;
+  }
+  .meetsect .introtext h3 {
+    font-size: 4.1vw !important;
+    scale: 125%;
+  }
+  .meetsect .introtext p {
+    font-size: 7.4vw;
+    scale: 90%;
+    width: 100%;
+  }
+  .meetsect .animwrapper {
+    scale: 420%;
+    top: 44%;
+  }
+  .meetsect > img {
+    width: 65%;
+    height: 60vw;
+    object-fit: cover;
+    margin: 15vw 0;
+  }
+  .meetsect .bigcard {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 91%;
+  }
+  .meetsect .bigcard img {
+    width: 100%;
+    padding: 1.7vw;
+  }
+  .meetsect .bigcard > div {
+    padding: 1.7vw 2.1vw;
+    height: 46vw;
+  }
+  .meetsect .bigcard > div h2 {
+    font-size: 6.6vw !important;
+  }
+  .meetsect .bigcard > div div p {
+    font-size: 4.1vw !important;
+  }
+  .meetsect .bigcard > div div a button p {
+    font-size: 4.1vw !important;
+  }
+  .readerssect {
+    padding: 5vw 6.3% 6vw 6.3%;
+  }
+  .readerssect > h3 {
+    font-size: 6.6vw !important;
+  }
+  .readerssect .griddiv {
+    grid-template-columns: repeat(5, 20%) !important;
+    grid-template-rows: repeat(3, 64vw) !important;
+    width: 100%;
+    padding: 3%;
+  }
+  .readerssect .griddiv .griditem2 {
+    grid-column: 1/4 !important;
+    grid-row: 1/2 !important;
+  }
+  .readerssect .griddiv .griditem1 {
+    grid-column: 2/5 !important;
+    grid-row: 2/3 !important;
+    border-radius: 0 !important;
+    padding-top: 6vw;
+    animation: opacityappear2 1.9s;
+    border-radius: 0 16vw 0 16vw !important;
+  }
+  .readerssect .griddiv .griditem3 {
+    grid-column: 3/6 !important;
+    grid-row: 3 !important;
+  }
+  .readerssect .griddiv div {
+    padding: 2%;
+  }
+  .readerssect .griddiv div .review {
+    font-size: 5.3vw !important;
+  }
+  .readerssect .griddiv div .author {
+    font-size: 4.1vw !important;
+  }
+  .formsect {
+    flex-direction: column;
+    padding: 8.4vw 5.8% 16.8vw 5.8% !important;
+    row-gap: 25vw;
+  }
+  .formsect > div {
+    width: 100%;
+  }
+  .formsect > div h3 {
+    font-size: 7.4vw !important;
+  }
+  .formsect > div p {
+    font-size: 4.1vw;
+  }
+  .formsect form {
+    width: 100%;
+    font-size: 4.1vw !important;
+    row-gap: 3.4vw;
+  }
+  .formsect form .emaileneter {
+    font-size: 4.1vw !important;
+  }
+  .formsect form label {
+    font-size: 4.1vw !important;
+  }
+  .formsect form .submit {
+    font-size: 4.1vw !important;
+    padding: 1.5vw;
+    border-radius: 50vw;
   }
 }
 
