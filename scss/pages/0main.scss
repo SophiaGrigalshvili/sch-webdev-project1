@@ -273,6 +273,28 @@ footer {
   .mobilever.active {
     top: 7.5vw;
   }
+
+  footer {
+    .grid {
+      row-gap: 2.8vw;
+      h3 {
+        font-size: $resp-text-size-h3 !important;
+      }
+
+      > div {
+        .longp {
+          width: 100% !important;
+        }
+      }
+    }
+    p {
+      font-size: 2vw;
+    }
+    > p {
+      margin-top: 2vw ;
+      padding-top: 1.5w;
+    }
+  }
 }
 
 // scroll js property

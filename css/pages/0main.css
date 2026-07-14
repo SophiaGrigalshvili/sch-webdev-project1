@@ -328,6 +328,22 @@ footer > p {
   .mobilever.active {
     top: 7.5vw;
   }
+  footer .grid {
+    row-gap: 2.8vw;
+  }
+  footer .grid h3 {
+    font-size: 4.6vw !important;
+  }
+  footer .grid > div .longp {
+    width: 100% !important;
+  }
+  footer p {
+    font-size: 2vw;
+  }
+  footer > p {
+    margin-top: 2vw;
+    padding-top: 1.5w;
+  }
 }
 header.fixedToTop {
   position: fixed;
