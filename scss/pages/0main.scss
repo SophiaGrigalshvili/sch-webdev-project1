@@ -291,8 +291,47 @@ footer {
       font-size: 2vw;
     }
     > p {
-      margin-top: 2vw ;
+      margin-top: 2vw;
       padding-top: 1.5w;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    a {
+      img {
+        width: 9.2vw;
+      }
+    }
+
+    > .fa-bars {
+      font-size: 5vw;
+      padding: 3.5vw;
+    }
+
+    .mobilever {
+      row-gap: 3.1vw;
+      p {
+        font-size: $resp2-text-size-main;
+      }
+
+      .login {
+        a {
+          p {
+            font-size: $resp2-text-size-main;
+          }
+        }
+      }
+
+      button {
+        padding: 0.8vw 1.9vw;
+        border-radius: 90vw;
+      }
+    }
+
+    .mobilever.active {
+      top: 11.9vw;
     }
   }
 }
