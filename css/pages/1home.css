@@ -121,6 +121,19 @@
     opacity: 100%;
   }
 }
+@keyframes circleappear2 {
+  0% {
+    opacity: 10%;
+    height: 20vw;
+    width: 20vw;
+    border-radius: 100%;
+    scale: 60%;
+  }
+  25% {
+    opacity: 2%;
+    border-radius: 100%;
+  }
+}
 .meetsect .bigcard > div h2 {
   font-family: "InstrumentSarif";
   font-size: 4.8vw;

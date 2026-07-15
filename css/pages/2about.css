@@ -121,6 +121,25 @@
     opacity: 100%;
   }
 }
+@keyframes circleappear2 {
+  0% {
+    opacity: 10%;
+    height: 20vw;
+    width: 20vw;
+    border-radius: 100%;
+    scale: 60%;
+  }
+  25% {
+    opacity: 2%;
+    border-radius: 100%;
+  }
+}
+.herosect .absolutediv > div > div h3 {
+  font-family: "InstrumentSarif";
+  font-size: 3.1vw;
+  letter-spacing: 0.06vw;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -131,8 +150,13 @@ header nav ul li:nth-child(2) a button p {
   text-decoration: underline;
 }
 
+main {
+  padding-top: 5.7vw;
+}
+
 .herosect {
   background-color: #606038;
+  display: flex;
   height: 60vw;
 }
 .herosect video {
@@ -140,6 +164,45 @@ header nav ul li:nth-child(2) a button p {
   width: 100%;
   filter: saturate(150%);
   opacity: 85%;
+}
+.herosect .absolutediv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  height: 38vw;
+  position: absolute;
+  top: 26%;
+}
+.herosect .absolutediv > div {
+  background-color: #333323;
+  height: 38vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  font-family: "InstrumentSarif";
+  color: #fffdce;
+  padding: 2vw 1.2vw;
+  animation: circleappear2 0.6s;
+}
+.herosect .absolutediv > div img {
+  width: 45%;
+  animation: opacityappear2 1.4s;
+}
+.herosect .absolutediv > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: opacityappear2 1.4s;
+}
+.herosect .absolutediv > div > div h3 {
+  width: 74%;
+}
+.herosect .absolutediv > div > div p {
+  font-size: 1.7vw;
 }
 
 main {
