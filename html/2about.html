@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/pages/2about.css" />
+    <link rel="stylesheet" href="../css/pages/0main.css" />
+  </head>
+  <body>
+    <header>
+      <a href="1home.html"
+        ><img
+          src="https://static.wixstatic.com/shapes/c837a6_cfca943078714fa5be058f0ed28292c4.svg"
+          alt="a wheel with "
+      /></a>
+
+      <nav class="desktopver">
+        <ul>
+          <li>
+            <a href="1home.html">
+              <button>
+                <p>Home</p>
+              </button>
+            </a>
+          </li>
+          <li>
+            <a href="2about.html">
+              <button>
+                <p>About</p>
+              </button>
+            </a>
+          </li>
+          <li>
+            <a href="3books.html">
+              <button>
+                <p>Books</p>
+              </button>
+            </a>
+          </li>
+          <li>
+            <a href="4events.html">
+              <button>
+                <p>Events</p>
+              </button>
+            </a>
+          </li>
+          <li>
+            <a href="5contact.html">
+              <button>
+                <p>Contact</p>
+              </button>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="login desktopver">
+        <i class="fa-solid fa-circle-user"></i>
+        <a href=""><p>Log In</p></a>
+      </div>
+
+      <i class="fa-solid fa-bars"></i>
+
+      <div class="mobilever">
+        <div class="login">
+          <i class="fa-solid fa-circle-user"></i> <a href=""><p>Log In</p></a>
+        </div>
+
+        <nav>
+          <ul>
+            <li>
+              <a href="1home.html">
+                <button>
+                  <p>Home</p>
+                </button>
+              </a>
+            </li>
+            <li>
+              <a href="2about.html">
+                <button>
+                  <p>About</p>
+                </button>
+              </a>
+            </li>
+            <li>
+              <a href="3books.html">
+                <button>
+                  <p>Books</p>
+                </button>
+              </a>
+            </li>
+            <li>
+              <a href="4events.html">
+                <button>
+                  <p>Events</p>
+                </button>
+              </a>
+            </li>
+            <li>
+              <a href="5contact.html">
+                <button>
+                  <p>Contact</p>
+                </button>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <footer>
+      <a href="herosect"><h1>Aurelia Finch</h1></a>
+      <div class="grid">
+        <h3 class="contacttxt">Contact</h3>
+        <h3 class="followtxt">Follow the Whispers</h3>
+        <div>
+          <p class="longp">500 Terry Francine St San Francisco, CA 94158</p>
+          <p>info@mysite.com</p>
+          <p>123-456-7890</p>
+        </div>
+
+        <ul class="infoul">
+          <li>
+            <p><a href="">Accessibility Statement</a></p>
+          </li>
+          <li>
+            <p><a href="">Terms & Conditions </a></p>
+          </li>
+          <li>
+            <p><a href="">Privacy Policy</a></p>
+          </li>
+        </ul>
+
+        <ul class="mediaul">
+          <li>
+            <p><a href="">Instagram</a></p>
+          </li>
+          <li>
+            <p><a href="">Pintrest </a></p>
+          </li>
+          <li>
+            <p><a href="">Twitter</a></p>
+          </li>
+        </ul>
+      </div>
+
+      <p>© 2035 by Aurelia Finch.</p>
+    </footer>
+
+    <!-- ------------- -->
+
+    <script>
+      // header scroll thingie
+      var prevScrollpos = window.pageYOffset;
+
+      var headerDiv = document.querySelector("header");
+      var headerBottom = headerDiv.offsetTop + headerDiv.offsetHeight;
+
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+
+        if (prevScrollpos <= currentScrollPos) {
+          headerDiv.classList.remove("fixedToTop");
+          headerDiv.style.top = "-12vw";
+        } else {
+          headerDiv.classList.add("fixedToTop");
+          headerDiv.style.top = "0";
+        }
+
+        prevScrollpos = currentScrollPos;
+      };
+
+      // responsive nav menu
+      const burgermenu = document.querySelector(".fa-bars");
+      const headernav = document.querySelector(".mobilever");
+
+      burgermenu.addEventListener("click", () => {
+        headernav.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
