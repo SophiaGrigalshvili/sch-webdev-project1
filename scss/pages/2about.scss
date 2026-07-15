@@ -26,6 +26,18 @@ header {
   }
 }
 
+.herosect {
+  background-color: $bg-color-olive;
+
+  height: 60vw;
+  video {
+    object-fit: cover;
+    width: 100%;
+    filter: saturate(150%);
+    opacity: 85%;
+  }
+}
+
 main {
   padding-top: 5.7vw;
   background-color: $bg-color-dark;

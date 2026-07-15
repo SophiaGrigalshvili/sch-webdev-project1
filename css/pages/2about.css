@@ -131,6 +131,17 @@ header nav ul li:nth-child(2) a button p {
   text-decoration: underline;
 }
 
+.herosect {
+  background-color: #606038;
+  height: 60vw;
+}
+.herosect video {
+  object-fit: cover;
+  width: 100%;
+  filter: saturate(150%);
+  opacity: 85%;
+}
+
 main {
   padding-top: 5.7vw;
   background-color: #1d1c19;
