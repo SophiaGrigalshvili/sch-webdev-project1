@@ -151,12 +151,6 @@
   font-size: 1.34vw;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 header nav ul li:nth-child(2) a button p {
   text-decoration: underline;
 }
@@ -385,7 +379,7 @@ main {
     align-self: center;
   }
   .meetsect {
-    padding: 10vw 2% 1.5vw 2%;
+    padding: 10vw 2% 17.5vw 2%;
   }
   .meetsect .introtext {
     row-gap: 3.8vw;
@@ -401,7 +395,7 @@ main {
   }
   .meetsect .animwrapper {
     scale: 420%;
-    top: 44%;
+    top: 140vw !important;
   }
   .meetsect > img {
     width: 65%;

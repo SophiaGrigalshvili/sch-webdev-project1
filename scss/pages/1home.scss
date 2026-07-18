@@ -2,12 +2,6 @@
 @use "../abstracts/mixin.scss" as *;
 @use "../abstracts/base.scss" as *;
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 header {
   nav {
     ul {

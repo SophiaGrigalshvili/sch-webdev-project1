@@ -157,12 +157,6 @@
   font-size: 1.34vw;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 header nav ul li:nth-child(1) a button p {
   text-decoration: underline;
 }
