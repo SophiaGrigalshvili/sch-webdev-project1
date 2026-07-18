@@ -28,6 +28,7 @@ header {
 
 main {
   padding-top: 5.7vw;
+  background-color: $bg-color-dark;
 }
 
 .herosect {
@@ -96,7 +97,144 @@ main {
   }
 }
 
-main {
-  padding-top: 5.7vw;
-  background-color: $bg-color-dark;
+.authorsect {
+  color: $text-color-light;
+  padding: 2.4vw 2% 8.3vw 2%;
+  display: flex;
+  flex-direction: column;
+
+  row-gap: 10.8vw;
+
+  animation: textsquishdelay 0.7s;
+  h2 {
+    @extend %h2-base;
+    width: 40%;
+  }
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    p {
+      @extend %p-base;
+      width: 48%;
+    }
+
+    img {
+      width: 20%;
+    }
+  }
+}
+
+.meetsect {
+  background-color: $bg-color-yellow;
+  padding: 10vw 1.4% 8.3vw 1.4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  row-gap: 7.8vw !important;
+  position: relative;
+
+  overflow: hidden;
+
+  .introtext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1vw;
+    color: $text-color-dark;
+    z-index: 3;
+
+    h3 {
+      font-family: $font-main;
+      font-size: $text-size-h3-alt;
+      letter-spacing: 0.06vw;
+      font-weight: 100;
+
+      animation: textsquish 0.7s;
+    }
+
+    p {
+      @extend %h3-base;
+      text-align: center;
+      width: 90%;
+
+      animation: textsquishdelay2 0.7s;
+    }
+  }
+
+  .animwrapper {
+    background-color: transparent;
+    border: 0.06vw solid $bg-color-yellow;
+    border-radius: 100%;
+    width: 30%;
+    height: 30vw;
+    scale: calc(130%);
+
+    top: 49%;
+    align-self: center;
+    position: absolute;
+    z-index: 2;
+
+    animation: circleappear 2s ease-in-out;
+    opacity: 0;
+  }
+  > img {
+    position: relative;
+    z-index: 1;
+    width: 20%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .meetsect {
+    .introtext {
+      row-gap: 2vw;
+      h3 {
+        font-size: $resp-text-size-h3 !important;
+      }
+    }
+
+    > img {
+      scale: calc(140%);
+    }
+
+    .animwrapper {
+      scale: calc(170%);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .meetsect {
+    padding: 10vw 2% 1.5vw 2%;
+
+    .introtext {
+      row-gap: 3.8vw;
+      h3 {
+        font-size: $resp2-text-size-main !important;
+        scale: calc(125%);
+      }
+
+      p {
+        font-size: $resp2-text-size-h3;
+        scale: calc(90%);
+        width: 100%;
+      }
+    }
+
+    .animwrapper {
+      scale: calc(420%);
+      top: 44%;
+    }
+
+    > img {
+      width: 65%;
+      height: 60vw;
+      object-fit: cover;
+      margin: 15vw 0;
+    }
+  }
 }

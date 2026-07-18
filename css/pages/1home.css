@@ -154,7 +154,7 @@
 
 .herosect .textdiv a button p, .meetsect .bigcard > div div a button p, .readerssect .griddiv > div div .author, .formsect > div p, .formsect form, .formsect form .submit {
   font-family: "InstrumentSarif";
-  font-size: 1.27vw;
+  font-size: 1.34vw;
 }
 
 * {
@@ -453,7 +453,7 @@ main {
   outline: none;
   padding: 0.7vw 1vw;
   color: #fffdce;
-  font-size: 1.27vw;
+  font-size: 1.34vw;
   font-family: "InstrumentSarif";
   caret-color: #fffdce;
 }

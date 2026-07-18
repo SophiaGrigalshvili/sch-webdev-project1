@@ -134,10 +134,21 @@
     border-radius: 100%;
   }
 }
-.herosect .absolutediv > div > div h3 {
+.authorsect h2 {
+  font-family: "InstrumentSarif";
+  font-size: 4.8vw;
+  font-weight: 400;
+}
+
+.herosect .absolutediv > div > div h3, .meetsect .introtext p {
   font-family: "InstrumentSarif";
   font-size: 3.1vw;
   letter-spacing: 0.06vw;
+}
+
+.authorsect div p {
+  font-family: "InstrumentSarif";
+  font-size: 1.34vw;
 }
 
 * {
@@ -152,6 +163,7 @@ header nav ul li:nth-child(2) a button p {
 
 main {
   padding-top: 5.7vw;
+  background-color: #1d1c19;
 }
 
 .herosect {
@@ -205,9 +217,119 @@ main {
   font-size: 1.7vw;
 }
 
-main {
-  padding-top: 5.7vw;
-  background-color: #1d1c19;
+.authorsect {
+  color: #fffdce;
+  padding: 2.4vw 2% 8.3vw 2%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10.8vw;
+  animation: textsquishdelay 0.7s;
+}
+.authorsect h2 {
+  width: 40%;
+}
+.authorsect div {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.authorsect div p {
+  width: 48%;
+}
+.authorsect div img {
+  width: 20%;
+}
+
+.meetsect {
+  background-color: #fdff7f;
+  padding: 10vw 1.4% 8.3vw 1.4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 7.8vw !important;
+  position: relative;
+  overflow: hidden;
+}
+.meetsect .introtext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1vw;
+  color: #1d1c19;
+  z-index: 3;
+}
+.meetsect .introtext h3 {
+  font-family: "InstrumentSarif";
+  font-size: 1.7vw;
+  letter-spacing: 0.06vw;
+  font-weight: 100;
+  animation: textsquish 0.7s;
+}
+.meetsect .introtext p {
+  text-align: center;
+  width: 90%;
+  animation: textsquishdelay2 0.7s;
+}
+.meetsect .animwrapper {
+  background-color: transparent;
+  border: 0.06vw solid #fdff7f;
+  border-radius: 100%;
+  width: 30%;
+  height: 30vw;
+  scale: 130%;
+  top: 49%;
+  align-self: center;
+  position: absolute;
+  z-index: 2;
+  animation: circleappear 2s ease-in-out;
+  opacity: 0;
+}
+.meetsect > img {
+  position: relative;
+  z-index: 1;
+  width: 20%;
+}
+
+@media (max-width: 1024px) {
+  .meetsect .introtext {
+    row-gap: 2vw;
+  }
+  .meetsect .introtext h3 {
+    font-size: 4.6vw !important;
+  }
+  .meetsect > img {
+    scale: 140%;
+  }
+  .meetsect .animwrapper {
+    scale: 170%;
+  }
+}
+@media (max-width: 768px) {
+  .meetsect {
+    padding: 10vw 2% 1.5vw 2%;
+  }
+  .meetsect .introtext {
+    row-gap: 3.8vw;
+  }
+  .meetsect .introtext h3 {
+    font-size: 4.1vw !important;
+    scale: 125%;
+  }
+  .meetsect .introtext p {
+    font-size: 7.4vw;
+    scale: 90%;
+    width: 100%;
+  }
+  .meetsect .animwrapper {
+    scale: 420%;
+    top: 44%;
+  }
+  .meetsect > img {
+    width: 65%;
+    height: 60vw;
+    object-fit: cover;
+    margin: 15vw 0;
+  }
 }
 
 /*# sourceMappingURL=2about.css.map */
