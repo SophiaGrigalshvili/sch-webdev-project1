@@ -380,6 +380,7 @@ footer > p {
   }
   header .mobilever {
     row-gap: 3.1vw;
+    top: -90vw;
   }
   header .mobilever p {
     font-size: 4.1vw;
