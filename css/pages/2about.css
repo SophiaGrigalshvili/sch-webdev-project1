@@ -291,6 +291,42 @@ main {
 }
 
 @media (max-width: 1024px) {
+  .herosect {
+    height: 67vw;
+  }
+  .herosect .absolutediv {
+    top: 17%;
+    height: 50vw;
+  }
+  .herosect .absolutediv > div {
+    row-gap: 4vw;
+    height: 50vw;
+    padding: 5vw 7vw 9.4vw 7vw;
+  }
+  .herosect .absolutediv > div > div {
+    row-gap: 1.8vw;
+  }
+  .herosect .absolutediv > div > div h3 {
+    font-size: 4.6vw;
+  }
+  .herosect .absolutediv > div > div p {
+    font-size: 2.9vw;
+  }
+  .authorsect {
+    padding: 2.8vw 3% 7.3vw 3%;
+  }
+  .authorsect h2 {
+    font-size: 5.8vw;
+    width: 50% !important;
+  }
+  .authorsect > div p {
+    font-size: 2.9vw;
+    width: 65%;
+  }
+  .authorsect > div img {
+    position: relative;
+    width: 30%;
+  }
   .meetsect .introtext {
     row-gap: 2vw;
   }
@@ -305,6 +341,47 @@ main {
   }
 }
 @media (max-width: 768px) {
+  .herosect {
+    height: 119vw;
+  }
+  .herosect .absolutediv {
+    height: 90vw;
+    top: 18% !important;
+  }
+  .herosect .absolutediv > div {
+    height: 90vw;
+    row-gap: 17vw !important;
+    padding: 9.6vw 6vw;
+  }
+  .herosect .absolutediv > div > div h3 {
+    width: 100% !important;
+    text-align: center;
+    font-size: 7.4vw !important;
+  }
+  .herosect .absolutediv > div > div p {
+    font-size: 4.1vw !important;
+  }
+  .authorsect {
+    padding: 6vw 7% 12.3vw 7%;
+    row-gap: 6vw;
+  }
+  .authorsect h2 {
+    font-size: 8.4vw;
+    width: 78% !important;
+  }
+  .authorsect div {
+    flex-direction: column;
+    align-items: start;
+    row-gap: 6vw;
+  }
+  .authorsect div p {
+    width: 100%;
+    font-size: 4.1vw;
+  }
+  .authorsect div img {
+    width: 100%;
+    align-self: center;
+  }
   .meetsect {
     padding: 10vw 2% 1.5vw 2%;
   }
