@@ -175,7 +175,7 @@ main {
   object-fit: cover;
   width: 100%;
   filter: saturate(150%);
-  opacity: 85%;
+  opacity: 75%;
 }
 .herosect .absolutediv {
   width: 100%;
@@ -346,7 +346,9 @@ main {
   }
   .herosect .absolutediv {
     height: 90vw;
-    top: 18% !important;
+    top: 20vw !important;
+    padding-left: 8%;
+    padding-right: 8%;
   }
   .herosect .absolutediv > div {
     height: 90vw;

@@ -40,7 +40,7 @@ main {
     object-fit: cover;
     width: 100%;
     filter: saturate(150%);
-    opacity: 85%;
+    opacity: 75%;
   }
   .absolutediv {
     width: 100%;
@@ -255,7 +255,9 @@ main {
 
     .absolutediv {
       height: 90vw;
-      top: 18% !important;
+      top: 20vw !important;
+      padding-left: 8%;
+      padding-right: 8%;
       > div {
         height: 90vw;
         row-gap: 17vw !important;
