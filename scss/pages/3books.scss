@@ -1,0 +1,27 @@
+@use "../abstracts/veriables.scss" as *;
+@use "../abstracts/mixin.scss" as *;
+@use "../abstracts/base.scss" as *;
+@use "../abstracts/animations.scss" as *;
+
+header {
+  nav {
+    ul {
+      li {
+        &:nth-child(3) {
+          a {
+            button {
+              p {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  padding-top: 5.7vw;
+  background-color: $bg-color-dark;
+}
