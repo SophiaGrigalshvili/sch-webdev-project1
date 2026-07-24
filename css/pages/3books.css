@@ -254,6 +254,26 @@ main {
   .herosect h3 {
     font-size: 4.6vw;
   }
+  .cardsect {
+    padding: 8.4vw 3.5%;
+  }
+  .cardsect > div {
+    padding: 2.3vw;
+  }
+  .cardsect > div img {
+    width: 165%;
+  }
+  .cardsect > div h2 {
+    font-size: 5.8vw !important;
+    width: 100% !important;
+  }
+  .cardsect > div p {
+    font-size: 2.3vw !important;
+    width: 90% !important;
+  }
+  .cardsect > div:nth-child(2) img {
+    width: 165%;
+  }
 }
 @media (max-width: 768px) {
   .herosect {
@@ -266,6 +286,32 @@ main {
   .herosect h3 {
     font-size: 6.6vw;
     width: 60%;
+  }
+  .cardsect {
+    padding: 5.6vw 5% 10.6vw 5%;
+  }
+  .cardsect > div {
+    flex-direction: column;
+    padding: 5.6vw;
+    row-gap: 5.6vw;
+  }
+  .cardsect > div img {
+    width: 100%;
+  }
+  .cardsect > div div {
+    row-gap: 2.8vw;
+  }
+  .cardsect > div div h2 {
+    font-size: 8.4vw !important;
+  }
+  .cardsect > div div p {
+    font-size: 4.1vw !important;
+  }
+  .cardsect > div:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+  .cardsect > div:nth-child(2) img {
+    width: 100%;
   }
 }
 

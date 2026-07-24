@@ -124,6 +124,33 @@ main {
       font-size: $resp-text-size-h3;
     }
   }
+
+  .cardsect {
+    padding: 8.4vw 3.5%;
+
+    > div {
+      padding: 2.3vw;
+
+      img {
+        width: 165%;
+      }
+
+      h2 {
+        font-size: $resp-text-size-h2 !important;
+        width: 100% !important;
+      }
+
+      p {
+        font-size: 2.3vw !important;
+        width: 90% !important;
+      }
+    }
+    > div:nth-child(2) {
+      img {
+        width: 165%;
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -137,6 +164,39 @@ main {
     h3 {
       font-size: $resp2-text-size-h2;
       width: 60%;
+    }
+  }
+
+  .cardsect {
+    padding: 5.6vw 5% 10.6vw 5%;
+    > div {
+      flex-direction: column;
+      padding: 5.6vw;
+
+      row-gap: 5.6vw;
+
+      img {
+        width: 100%;
+      }
+
+      div {
+        row-gap: 2.8vw;
+
+        h2 {
+          font-size: $resp2-text-size-h2-alt !important;
+        }
+
+        p {
+          font-size: $resp2-text-size-main !important;
+        }
+      }
+    }
+
+    > div:nth-child(2) {
+      flex-direction: column-reverse;
+      img {
+        width: 100%;
+      }
     }
   }
 }
