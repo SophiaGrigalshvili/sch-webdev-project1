@@ -168,7 +168,9 @@ main {
   }
 
   .cardsect {
-    padding: 5.6vw 5% 10.6vw 5%;
+    padding: 5.6vw 5%;
+
+    row-gap: 4.7vw;
     > div {
       flex-direction: column;
       padding: 5.6vw;

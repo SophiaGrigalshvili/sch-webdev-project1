@@ -288,7 +288,8 @@ main {
     width: 60%;
   }
   .cardsect {
-    padding: 5.6vw 5% 10.6vw 5%;
+    padding: 5.6vw 5%;
+    row-gap: 4.7vw;
   }
   .cardsect > div {
     flex-direction: column;
