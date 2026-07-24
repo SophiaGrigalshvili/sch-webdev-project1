@@ -143,4 +143,49 @@ main {
   background-color: #1d1c19;
 }
 
+.herosect {
+  padding: 9vw 3.3vw 2vw 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  row-gap: 1.5vw;
+  background-color: #fdff7f;
+  color: #1d1c19;
+}
+.herosect h1 {
+  font-size: 17.5vw;
+  font-family: "PinyonScript";
+  font-style: italic;
+  line-height: 13.4vw;
+}
+.herosect h3 {
+  font-family: "InstrumentSarif";
+  font-weight: 400;
+  font-size: 1.7vw;
+}
+
+@media (max-width: 1024px) {
+  .herosect {
+    row-gap: 6.4vw !important;
+  }
+  .herosect h3 {
+    font-size: 4.6vw;
+  }
+}
+@media (max-width: 768px) {
+  .herosect {
+    padding: 18vw 1.2vw 10vw 0;
+  }
+  .herosect h1 {
+    font-size: 20vw;
+    line-height: 17vw;
+  }
+  .herosect h3 {
+    font-size: 6.6vw;
+    width: 60%;
+  }
+}
+
 /*# sourceMappingURL=3books.css.map */
