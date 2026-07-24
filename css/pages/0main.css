@@ -8,6 +8,11 @@
   src: url(/scss/fonts/PinyonScript-Regular.ttf);
   font-weight: 700;
 }
+header ul a button p, header .login a p, footer .grid > div, footer .grid ul, footer > p {
+  font-family: "InstrumentSarif";
+  font-size: 1.34vw;
+}
+
 @keyframes circleappear {
   from {
     opacity: 100%;
@@ -134,11 +139,6 @@
     border-radius: 100%;
   }
 }
-header ul a button p, header .login a p, footer .grid > div, footer .grid ul, footer > p {
-  font-family: "InstrumentSarif";
-  font-size: 1.34vw;
-}
-
 * {
   padding: 0;
   margin: 0;

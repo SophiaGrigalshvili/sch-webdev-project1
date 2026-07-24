@@ -8,6 +8,29 @@
   src: url(/scss/fonts/PinyonScript-Regular.ttf);
   font-weight: 700;
 }
+.meetsect .bigcard > div h2 {
+  font-family: "InstrumentSarif";
+  font-size: 4.8vw;
+  font-weight: 400;
+}
+
+.herosect .textdiv h3, .meetsect .introtext p {
+  font-family: "InstrumentSarif";
+  font-size: 3.1vw;
+  letter-spacing: 0.06vw;
+}
+
+.meetsect .bigcard > div div p {
+  font-family: "InstrumentSarif";
+  font-size: 2.3vw;
+  letter-spacing: 0.06vw;
+}
+
+.herosect .textdiv a button p, .meetsect .bigcard > div div a button p, .readerssect .griddiv > div div .author, .formsect > div p, .formsect form, .formsect form .submit {
+  font-family: "InstrumentSarif";
+  font-size: 1.34vw;
+}
+
 @keyframes circleappear {
   from {
     opacity: 100%;
@@ -134,29 +157,6 @@
     border-radius: 100%;
   }
 }
-.meetsect .bigcard > div h2 {
-  font-family: "InstrumentSarif";
-  font-size: 4.8vw;
-  font-weight: 400;
-}
-
-.herosect .textdiv h3, .meetsect .introtext p {
-  font-family: "InstrumentSarif";
-  font-size: 3.1vw;
-  letter-spacing: 0.06vw;
-}
-
-.meetsect .bigcard > div div p {
-  font-family: "InstrumentSarif";
-  font-size: 2.3vw;
-  letter-spacing: 0.06vw;
-}
-
-.herosect .textdiv a button p, .meetsect .bigcard > div div a button p, .readerssect .griddiv > div div .author, .formsect > div p, .formsect form, .formsect form .submit {
-  font-family: "InstrumentSarif";
-  font-size: 1.34vw;
-}
-
 header nav ul li:nth-child(1) a button p {
   text-decoration: underline;
 }

@@ -8,6 +8,23 @@
   src: url(/scss/fonts/PinyonScript-Regular.ttf);
   font-weight: 700;
 }
+.authorsect h2 {
+  font-family: "InstrumentSarif";
+  font-size: 4.8vw;
+  font-weight: 400;
+}
+
+.herosect .absolutediv > div > div h3, .meetsect .introtext p {
+  font-family: "InstrumentSarif";
+  font-size: 3.1vw;
+  letter-spacing: 0.06vw;
+}
+
+.authorsect div p {
+  font-family: "InstrumentSarif";
+  font-size: 1.34vw;
+}
+
 @keyframes circleappear {
   from {
     opacity: 100%;
@@ -134,23 +151,6 @@
     border-radius: 100%;
   }
 }
-.authorsect h2 {
-  font-family: "InstrumentSarif";
-  font-size: 4.8vw;
-  font-weight: 400;
-}
-
-.herosect .absolutediv > div > div h3, .meetsect .introtext p {
-  font-family: "InstrumentSarif";
-  font-size: 3.1vw;
-  letter-spacing: 0.06vw;
-}
-
-.authorsect div p {
-  font-family: "InstrumentSarif";
-  font-size: 1.34vw;
-}
-
 header nav ul li:nth-child(2) a button p {
   text-decoration: underline;
 }
