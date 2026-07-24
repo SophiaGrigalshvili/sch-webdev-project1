@@ -12,3 +12,9 @@
   border-radius: $mx-borderradius;
 }
 
+@mixin card-mx($mx-width, $mx-height, $mx-padding, $mx-bgColor) {
+  width: $mx-width;
+  height: $mx-height;
+  padding: $mx-padding;
+  background-color: $mx-bgColor;
+}

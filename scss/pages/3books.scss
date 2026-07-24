@@ -43,12 +43,76 @@ main {
     font-family: $font-fancy;
     font-style: italic;
     line-height: 13.4vw;
+
+    animation: textsquish 0.5s;
   }
 
   h3 {
     font-family: $font-main;
     font-weight: 400;
     font-size: $text-size-h3-alt;
+
+    animation: textsquishdelay2 0.8s;
+  }
+}
+
+.cardsect {
+  padding: 7vw 1.6vw;
+  background-color: $bg-color-yellow;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 3.4vw;
+
+  color: $text-color-light;
+  font-family: $font-main;
+
+  > div {
+    @include card-mx(100%, auto, 1.6vw, $bg-color-dark);
+
+    display: flex;
+    column-gap: 3%;
+
+    img {
+      width: 90%;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h2 {
+        @extend %h2-base;
+        width: 80%;
+      }
+
+      p {
+        font-size: $text-size-main;
+        width: 85%;
+      }
+    }
+  }
+
+  > div:nth-child(1) {
+    animation: slideinleft 1.2s ease-out;
+  }
+
+  > div:nth-child(2) {
+    flex-direction: row-reverse;
+    background-color: $bg-color-green;
+
+    img {
+      width: 100%;
+    }
+
+    animation: slideinright 1.7s ease-out;
+  }
+
+  > div:nth-child(3) {
+    animation: slideinleft2 2.2s ease-out;
   }
 }
 
