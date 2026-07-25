@@ -1,11 +1,11 @@
 // header scroll thingie
-const prevScrollpos = window.pageYOffset;
+let prevScrollpos = window.pageYOffset;
 
-const headerDiv = document.querySelector("header");
+let headerDiv = document.querySelector("header");
 const headerBottom = headerDiv.offsetTop + headerDiv.offsetHeight;
 
 window.onscroll = function () {
-  const currentScrollPos = window.pageYOffset;
+  let currentScrollPos = window.pageYOffset;
 
   if (prevScrollpos <= currentScrollPos) {
     headerDiv.classList.remove("fixedToTop");
@@ -20,7 +20,7 @@ window.onscroll = function () {
 
 // responsive nav menu
 const burgermenu = document.querySelector(".fa-bars");
-let headernav = document.querySelector(".mobilever");
+const headernav = document.querySelector(".mobilever");
 
 burgermenu.addEventListener("click", () => {
   headernav.classList.toggle("active");
