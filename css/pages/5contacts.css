@@ -162,7 +162,201 @@ header nav ul li:nth-child(5) a button p {
 
 main {
   padding-top: 5.7vw;
-  background-color: #1d1c19;
+  background-color: #606038;
+}
+
+.formsect {
+  padding: 5.3vw 2%;
+  display: flex;
+  color: #fffdce;
+  font-family: "InstrumentSarif";
+}
+.formsect > div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5.6vw;
+}
+.formsect > div > div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.3vw;
+}
+.formsect > div > div > p {
+  font-size: 1.7vw;
+}
+.formsect > div > div h2 {
+  font-size: 3.5vw;
+  font-weight: 400;
+  width: 75%;
+}
+.formsect > div > div ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5vw;
+}
+.formsect > div > div ul li h3 {
+  font-size: 1.7vw;
+}
+.formsect > div > div ul li p {
+  font-size: 1.34vw;
+  width: 30%;
+}
+.formsect form {
+  padding: 3.7vw 0;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.3vw;
+}
+.formsect form h3 {
+  font-size: 1.7vw;
+  font-weight: 400;
+  padding-bottom: 0.9vw;
+}
+.formsect form .flexcontainer {
+  display: flex;
+  column-gap: 3%;
+}
+.formsect form .inputfield {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.4vw;
+  width: 100%;
+}
+.formsect form .inputfield label {
+  font-size: 1.34vw;
+}
+.formsect form .inputfield input,
+.formsect form .inputfield textarea {
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 0.06vw solid #fffdce;
+  caret-color: #fffdce;
+  padding: 0.7vw;
+}
+.formsect form .inputfield textarea {
+  resize: none;
+  height: 6.4vw;
+}
+.formsect form > input {
+  border: 0.06vw solid #fffdce;
+  background-color: #fffdce;
+  padding: 0.6vw;
+  border-radius: 30vw;
+  color: #1d1c19;
+  font-family: "InstrumentSarif";
+  font-size: 1.34vw;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.formsect form > input:hover {
+  background-color: transparent;
+  color: #fffdce;
+}
+
+@media (max-width: 1024px) {
+  .formsect {
+    padding: 8vw 4%;
+  }
+  .formsect > div {
+    width: 40%;
+    row-gap: 7.4vw;
+  }
+  .formsect > div > div > p {
+    font-size: 2.9vw;
+  }
+  .formsect > div > div h2 {
+    font-size: 4.6vw;
+    width: 100%;
+  }
+  .formsect > div > div ul {
+    row-gap: 1.3vw;
+  }
+  .formsect > div > div ul li p {
+    font-size: 2.9vw;
+    width: 70%;
+  }
+  .formsect > div > div ul li h3 {
+    font-size: 3.4vw;
+  }
+  .formsect form {
+    width: 60%;
+    padding-left: 2vw;
+    row-gap: 2.3vw;
+  }
+  .formsect form h3 {
+    font-size: 2.9vw;
+    padding-top: 2.2vw;
+  }
+  .formsect form .inputfield label,
+  .formsect form .inputfield input {
+    font-size: 2.3vw;
+  }
+  .formsect form textarea {
+    font-size: 2.3vw;
+    height: 9vw !important;
+  }
+  .formsect form input {
+    font-size: 2.9vw;
+  }
+}
+@media (max-width: 768px) {
+  .formsect {
+    flex-direction: column;
+    padding: 13vw 5% !important;
+  }
+  .formsect > div {
+    width: 100%;
+    row-gap: 8.7vw;
+    padding-bottom: 7.8vw;
+  }
+  .formsect > div > div p {
+    font-size: 4.1vw !important;
+  }
+  .formsect > div > div h2 {
+    font-size: 7.4vw !important;
+    width: 80% !important;
+  }
+  .formsect > div > div ul {
+    row-gap: 2.7vw !important;
+  }
+  .formsect > div > div ul li p {
+    font-size: 4.1vw !important;
+    width: 37% !important;
+  }
+  .formsect > div > div ul li h3 {
+    font-size: 5.3vw !important;
+  }
+  .formsect form {
+    width: 100%;
+    padding-left: 0;
+    row-gap: 4.7vw !important;
+  }
+  .formsect form h3 {
+    font-size: 5.3vw;
+    padding-top: 2.2vw;
+  }
+  .formsect form .flexcontainer:nth-child(3) {
+    flex-direction: column;
+    row-gap: 4.7vw;
+  }
+  .formsect form .inputfield label,
+  .formsect form .inputfield input {
+    font-size: 4.1vw;
+    padding: 1.6vw;
+  }
+  .formsect form input {
+    font-size: 5.3vw;
+  }
+  .formsect form textarea {
+    font-size: 4.1vw !important;
+    padding: 1.6vw !important;
+    height: 19vw !important;
+  }
 }
 
 /*# sourceMappingURL=5contacts.css.map */

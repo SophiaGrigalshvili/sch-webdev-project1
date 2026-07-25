@@ -114,12 +114,70 @@
     </header>
 
     <main>
-      <section>
+      <section class="formsect">
         <div>
-          <div></div>
-          <div></div>
+          <div>
+            <p>Connect with Me</p>
+            <h2>I always love to hear from fellow readers and dreamers</h2>
+          </div>
+          <div>
+            <ul>
+              <li>
+                <h3>Address</h3>
+              </li>
+              <li>
+                <p>500 Terry Francine St San Francisco, CA 94158</p>
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                <h3>Telephone</h3>
+              </li>
+              <li>
+                <p>123-456-7890</p>
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                <h3>Email</h3>
+              </li>
+              <li>
+                <p>info@mysite.com</p>
+              </li>
+            </ul>
+          </div>
         </div>
-        <form action=""></form>
+
+        <form action="">
+          <h3>Send a Message</h3>
+          <div class="flexcontainer">
+            <div class="inputfield">
+              <label for="firstname">First Name *</label>
+              <input type="text" required />
+            </div>
+            <div class="inputfield">
+              <label for="lastname">Last Name *</label>
+              <input type="text" required />
+            </div>
+          </div>
+          <div class="flexcontainer">
+            <div class="inputfield">
+              <label for="email">Email *</label>
+              <input type="email" required />
+            </div>
+            <div class="inputfield">
+              <label for="subject">Subject</label>
+              <input type="text" name="subject" id="" />
+            </div>
+          </div>
+          <div class="inputfield">
+            <label for="msg">Message</label>
+            <textarea name="msg" id="" required></textarea>
+          </div>
+          <input type="submit" value="submit" />
+        </form>
       </section>
     </main>
 

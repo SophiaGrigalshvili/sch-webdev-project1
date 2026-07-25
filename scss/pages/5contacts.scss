@@ -23,5 +23,244 @@ header {
 
 main {
   padding-top: 5.7vw;
-  background-color: $bg-color-dark;
+  background-color: $bg-color-olive;
+}
+
+.formsect {
+  padding: 5.3vw 2%;
+  display: flex;
+  color: $text-color-light;
+  font-family: $font-main;
+
+  > div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5.6vw;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1.3vw;
+      > p {
+        font-size: $text-size-h3-alt;
+      }
+
+      h2 {
+        font-size: 3.5vw;
+        font-weight: 400;
+        width: 75%;
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.5vw;
+        li {
+          h3 {
+            font-size: $text-size-h3-alt;
+          }
+
+          p {
+            font-size: $text-size-main;
+            width: 30%;
+          }
+        }
+      }
+    }
+  }
+
+  form {
+    padding: 3.7vw 0;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.3vw;
+
+    h3 {
+      font-size: $text-size-h3-alt;
+      font-weight: 400;
+      padding-bottom: 0.9vw;
+    }
+
+    .flexcontainer {
+      display: flex;
+      column-gap: 3%;
+    }
+
+    .inputfield {
+      display: flex;
+      flex-direction: column;
+      row-gap: 0.4vw;
+      width: 100%;
+
+      label {
+        font-size: $text-size-main;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        border-bottom: 0.06vw solid $text-color-light;
+        caret-color: $text-color-light;
+        padding: 0.7vw;
+      }
+
+      textarea {
+        resize: none;
+        height: 6.4vw;
+      }
+    }
+
+    > input {
+      border: 0.06vw solid $text-color-light;
+      background-color: $text-color-light;
+      padding: 0.6vw;
+      border-radius: 30vw;
+
+      color: $text-color-dark;
+      font-family: $font-main;
+      font-size: $text-size-main;
+
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: transparent;
+        color: $text-color-light;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .formsect {
+    padding: 8vw 4%;
+    > div {
+      width: 40%;
+      row-gap: 7.4vw;
+      > div {
+        > p {
+          font-size: $resp-text-size-main;
+        }
+        h2 {
+          font-size: $resp-text-size-h3;
+          width: 100%;
+        }
+
+        ul {
+          row-gap: 1.3vw;
+          li {
+            p {
+              font-size: $resp-text-size-main;
+              width: 70%;
+            }
+
+            h3 {
+              font-size: 3.4vw;
+            }
+          }
+        }
+      }
+    }
+
+    form {
+      width: 60%;
+      padding-left: 2vw;
+      row-gap: 2.3vw;
+
+      h3 {
+        font-size: $resp-text-size-main;
+        padding-top: 2.2vw;
+      }
+
+      .inputfield {
+        label,
+        input {
+          font-size: $text-size-p-alt;
+        }
+      }
+
+      textarea {
+        font-size: $text-size-p-alt;
+        height: 9vw !important;
+      }
+      input {
+        font-size: $resp-text-size-main;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .formsect {
+    flex-direction: column;
+    padding: 13vw 5% !important;
+    > div {
+      width: 100%;
+      row-gap: 8.7vw;
+      padding-bottom: 7.8vw;
+      > div {
+        p {
+          font-size: $resp2-text-size-main !important;
+        }
+        h2 {
+          font-size: $resp2-text-size-h3 !important;
+          width: 80% !important;
+        }
+
+        ul {
+          row-gap: 2.7vw !important;
+          li {
+            p {
+              font-size: $resp2-text-size-main !important;
+              width: 37% !important;
+            }
+
+            h3 {
+              font-size: $resp2-text-size-p-alt !important;
+            }
+          }
+        }
+      }
+    }
+
+    form {
+      width: 100%;
+      padding-left: 0;
+
+      row-gap: 4.7vw !important;
+      h3 {
+        font-size: $resp2-text-size-p-alt;
+        padding-top: 2.2vw;
+      }
+      .flexcontainer {
+        &:nth-child(3) {
+          flex-direction: column;
+          row-gap: 4.7vw;
+        }
+      }
+
+      .inputfield {
+        label,
+        input {
+          font-size: $resp2-text-size-main;
+          padding: 1.6vw;
+        }
+      }
+      input {
+        font-size: $resp2-text-size-p-alt;
+      }
+
+      textarea {
+        font-size: $resp2-text-size-main !important;
+        padding: 1.6vw !important;
+        height: 19vw !important;
+      }
+    }
+  }
 }
