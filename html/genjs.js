@@ -5,7 +5,7 @@ const headerDiv = document.querySelector("header");
 const headerBottom = headerDiv.offsetTop + headerDiv.offsetHeight;
 
 window.onscroll = function () {
-  var currentScrollPos = window.pageYOffset;
+  const currentScrollPos = window.pageYOffset;
 
   if (prevScrollpos <= currentScrollPos) {
     headerDiv.classList.remove("fixedToTop");
@@ -20,7 +20,7 @@ window.onscroll = function () {
 
 // responsive nav menu
 const burgermenu = document.querySelector(".fa-bars");
-const headernav = document.querySelector(".mobilever");
+let headernav = document.querySelector(".mobilever");
 
 burgermenu.addEventListener("click", () => {
   headernav.classList.toggle("active");
