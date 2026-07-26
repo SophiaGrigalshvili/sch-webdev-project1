@@ -17,6 +17,19 @@
     opacity: 100%;
   }
 }
+@keyframes circleappear2 {
+  0% {
+    opacity: 10%;
+    height: 20vw;
+    width: 20vw;
+    border-radius: 100%;
+    scale: 60%;
+  }
+  25% {
+    opacity: 2%;
+    border-radius: 100%;
+  }
+}
 @keyframes opacityappear {
   0% {
     opacity: 0%;
@@ -76,9 +89,31 @@
 }
 @keyframes slideinleft {
   from {
-    transform: translateX(-110%);
+    transform: translateX(-120%);
   }
   to {
+    transform: translateX(0);
+  }
+}
+@keyframes slideinleft2 {
+  0% {
+    transform: translateX(-120%);
+  }
+  30% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideinleft3 {
+  0% {
+    transform: translateX(-120%);
+  }
+  50% {
+    transform: translateX(-120%);
+  }
+  100% {
     transform: translateX(0);
   }
 }
@@ -93,23 +128,38 @@
     transform: translateX(0);
   }
 }
-@keyframes slideinleft2 {
-  0% {
-    transform: translateX(-110%);
-  }
-  30% {
-    transform: translateX(-110%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
 @keyframes slideindown {
   0% {
     opacity: 0%;
     transform: translateY(-25%);
   }
   20% {
+    opacity: 0%;
+    transform: translateY(-25%);
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes slideindowndelay {
+  0% {
+    opacity: 0%;
+    transform: translateY(-25%);
+  }
+  40% {
+    opacity: 0%;
+    transform: translateY(-25%);
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes slideindowndela2 {
+  0% {
+    opacity: 0%;
+    transform: translateY(-25%);
+  }
+  54% {
     opacity: 0%;
     transform: translateY(-25%);
   }
@@ -130,30 +180,30 @@
     opacity: 100%;
   }
 }
-@keyframes slideindowndelay {
+@keyframes slideinup2 {
   0% {
     opacity: 0%;
-    transform: translateY(-25%);
+    transform: translateY(25%);
   }
-  40% {
+  42% {
     opacity: 0%;
-    transform: translateY(-25%);
+    transform: translateY(25%);
   }
   100% {
     opacity: 100%;
   }
 }
-@keyframes circleappear2 {
+@keyframes slideinup3 {
   0% {
-    opacity: 10%;
-    height: 20vw;
-    width: 20vw;
-    border-radius: 100%;
-    scale: 60%;
+    opacity: 0%;
+    transform: translateY(25%);
   }
-  25% {
-    opacity: 2%;
-    border-radius: 100%;
+  54% {
+    opacity: 0%;
+    transform: translateY(25%);
+  }
+  100% {
+    opacity: 100%;
   }
 }
 header nav ul li:nth-child(4) a button p {
@@ -178,6 +228,7 @@ main {
 .herosect > h3 {
   font-size: 2.3vw;
   font-weight: 400;
+  animation: textsquish 0.5s;
 }
 .herosect .gridsect {
   display: grid;
@@ -246,6 +297,15 @@ main {
 .herosect .gridsect .card:hover > div img {
   scale: 110%;
 }
+.herosect .gridsect .convCard {
+  animation: slideinup 1s;
+}
+.herosect .gridsect .launchCard {
+  animation: slideinup2 1.2s;
+}
+.herosect .gridsect .signCard {
+  animation: slideinup3 1.4s;
+}
 
 @media (max-width: 1024px) {
   .herosect {
@@ -282,14 +342,20 @@ main {
   }
   .herosect .gridsect .convCard {
     grid-column: 1/3;
+    z-index: 2;
+    background-color: #1d1c19;
   }
   .herosect .gridsect .launchCard {
     grid-column: 3/5;
+    z-index: 2;
+    background-color: #1d1c19;
   }
   .herosect .gridsect .signCard {
     grid-column: 2/4;
     grid-row: 2;
     border-radius: 0 0 15vw 15vw;
+    animation: slideindowndela2 1.4s;
+    z-index: 1;
   }
 }
 @media (max-width: 768px) {
@@ -330,14 +396,17 @@ main {
   .herosect .gridsect .convCard {
     grid-column: 1;
     grid-row: 1;
+    animation: slideinleft 1s;
   }
   .herosect .gridsect .launchCard {
     grid-column: 1;
     grid-row: 2;
+    animation: slideinleft2 1s;
   }
   .herosect .gridsect .signCard {
     grid-column: 1;
     grid-row: 3;
+    animation: slideinleft3 1.2s;
   }
 }
 

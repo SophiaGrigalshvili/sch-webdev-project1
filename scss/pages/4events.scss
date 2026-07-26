@@ -41,6 +41,8 @@ main {
   > h3 {
     font-size: $text-size-p-alt;
     font-weight: 400;
+
+    animation: textsquish 0.5s;
   }
 
   .gridsect {
@@ -128,6 +130,18 @@ main {
         }
       }
     }
+
+    .convCard {
+      animation: slideinup 1s;
+    }
+
+    .launchCard {
+      animation: slideinup2 1.2s;
+    }
+
+    .signCard {
+      animation: slideinup3 1.4s;
+    }
   }
 }
 
@@ -173,15 +187,22 @@ main {
       }
       .convCard {
         grid-column: 1/3;
+        z-index: 2;
+        background-color: $bg-color-dark;
       }
       .launchCard {
         grid-column: 3/5;
+        z-index: 2;
+        background-color: $bg-color-dark;
       }
       .signCard {
         grid-column: 2/4;
         grid-row: 2;
 
         border-radius: 0 0 15vw 15vw;
+
+        animation: slideindowndela2 1.4s;
+        z-index: 1;
       }
     }
   }
@@ -233,14 +254,20 @@ main {
       .convCard {
         grid-column: 1;
         grid-row: 1;
+
+        animation: slideinleft 1s;
       }
       .launchCard {
         grid-column: 1;
         grid-row: 2;
+
+        animation: slideinleft2 1s;
       }
       .signCard {
         grid-column: 1;
         grid-row: 3;
+
+        animation: slideinleft3 1.2s;
       }
     }
   }
