@@ -206,6 +206,8 @@ main {
 }
 .herosect .gridsect .card > div img {
   transition: 0.4s ease-out;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 .herosect .gridsect .card h3 {
@@ -243,6 +245,100 @@ main {
 }
 .herosect .gridsect .card:hover > div img {
   scale: 110%;
+}
+
+@media (max-width: 1024px) {
+  .herosect {
+    padding: 6.6vw 6%;
+  }
+  .herosect > h3 {
+    font-size: 4.6vw;
+  }
+  .herosect .gridsect {
+    grid-template-columns: repeat(4, 22%);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 4%;
+  }
+  .herosect .gridsect .card {
+    border-radius: 15vw 15vw 0 0;
+    row-gap: 1.4vw;
+  }
+  .herosect .gridsect .card > div {
+    width: 100%;
+    height: 40vw !important;
+    margin-bottom: 2.5vw;
+  }
+  .herosect .gridsect .card h3 {
+    font-size: 2.9vw !important;
+  }
+  .herosect .gridsect .card p {
+    font-size: 2.3vw !important;
+  }
+  .herosect .gridsect .card button {
+    font-size: 2.3vw !important;
+    margin-top: 1.7vw !important;
+    margin-bottom: 1.7vw !important;
+    padding: 0.9vw 6.9vw !important;
+  }
+  .herosect .gridsect .convCard {
+    grid-column: 1/3;
+  }
+  .herosect .gridsect .launchCard {
+    grid-column: 3/5;
+  }
+  .herosect .gridsect .signCard {
+    grid-column: 2/4;
+    grid-row: 2;
+    border-radius: 0 0 15vw 15vw;
+  }
+}
+@media (max-width: 768px) {
+  .herosect {
+    padding: 10vw 0;
+    row-gap: 6vw;
+  }
+  .herosect > h3 {
+    font-size: 7.4vw;
+  }
+  .herosect .gridsect {
+    grid-template-columns: repeat(1, 100%) !important;
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    padding: 11%;
+    row-gap: 8vw !important;
+  }
+  .herosect .gridsect .card {
+    border-radius: 0;
+    row-gap: 2.6vw;
+  }
+  .herosect .gridsect .card > div {
+    height: 80vw !important;
+    margin-bottom: 3.8vw !important;
+  }
+  .herosect .gridsect .card h3 {
+    font-size: 5.3vw !important;
+  }
+  .herosect .gridsect .card p {
+    font-size: 4.1vw !important;
+  }
+  .herosect .gridsect .card button {
+    font-size: 4.1vw !important;
+    margin-top: 2.1vw !important;
+    margin-bottom: 3.8vw !important;
+    padding: 1.5vw 16.8vw !important;
+  }
+  .herosect .gridsect .convCard {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .herosect .gridsect .launchCard {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .herosect .gridsect .signCard {
+    grid-column: 1;
+    grid-row: 3;
+  }
 }
 
 /*# sourceMappingURL=4events.css.map */
