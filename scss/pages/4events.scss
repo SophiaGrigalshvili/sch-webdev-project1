@@ -1,0 +1,130 @@
+@use "../abstracts/veriables.scss" as *;
+@use "../abstracts/mixin.scss" as *;
+@use "../abstracts/base.scss" as *;
+@use "../abstracts/animations.scss" as *;
+
+header {
+  nav {
+    ul {
+      li {
+        &:nth-child(4) {
+          a {
+            button {
+              p {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  padding-top: 5.7vw;
+  background-color: $bg-color-dark;
+}
+
+.herosect {
+  background-color: $bg-color-dark;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4.7vw 0;
+
+  row-gap: 4vw;
+
+  color: $text-color-light;
+  font-family: $font-main;
+
+  > h3 {
+    font-size: $text-size-p-alt;
+    font-weight: 400;
+  }
+
+  .gridsect {
+    display: grid;
+    grid-template-columns: repeat(3, 30.6%);
+    gap: 2%;
+    justify-content: center;
+
+    .card {
+      width: 100%;
+      overflow: hidden;
+      border: 0.06vw solid #fffdce4e;
+      border-radius: 14vw 14vw 0 0;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 0.8vw;
+
+      padding-bottom: 2.4vw;
+
+      > div {
+        overflow: hidden;
+        height: 34vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.4vw;
+        img {
+          transition: 0.4s ease-out;
+          object-fit: cover;
+        }
+      }
+
+      h3 {
+        font-size: $text-size-h3-alt;
+        font-weight: 400;
+      }
+      > p {
+        font-size: 1.16vw;
+      }
+
+      a {
+        color: $text-color-light;
+        p {
+          font-size: 1.16vw;
+        }
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      a {
+        button {
+          @include btn-mx(
+            $text-color-light,
+            $text-color-dark,
+            0.7vw 4.5vw,
+            none,
+            50vw
+          );
+
+          font-family: $font-main;
+          font-size: 1.16vw;
+
+          margin-top: 0.8vw;
+
+          cursor: pointer;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        > div {
+          img {
+            scale: 110%;
+          }
+        }
+      }
+    }
+  }
+}
+

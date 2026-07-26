@@ -1,3 +1,248 @@
+@font-face {
+  font-family: "InstrumentSarif";
+  src: url(/scss/fonts/InstrumentSerif-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "PinyonScript";
+  src: url(/scss/fonts/PinyonScript-Regular.ttf);
+  font-weight: 700;
+}
+@keyframes circleappear {
+  from {
+    opacity: 100%;
+    border-width: 40vw;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+@keyframes opacityappear {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes opacityappear2 {
+  0% {
+    opacity: 0%;
+  }
+  30% {
+    opacity: 0%;
+    scale: 90%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes textsquish {
+  from {
+    opacity: 40%;
+    transform: scaleY(30%);
+  }
+  to {
+    transform: scaleY(100%);
+  }
+}
+@keyframes textsquishdelay {
+  0% {
+    opacity: 0%;
+    transform: scaleY(30%);
+  }
+  20% {
+    opacity: 0%;
+    transform: scaleY(30%);
+  }
+  100% {
+    opacity: 100%;
+    transform: scaleY(100%);
+  }
+}
+@keyframes textsquishdelay2 {
+  0% {
+    opacity: 0%;
+    transform: scaleY(30%);
+  }
+  30% {
+    opacity: 0%;
+    transform: scaleY(30%);
+  }
+  100% {
+    opacity: 100%;
+    transform: scaleY(100%);
+  }
+}
+@keyframes slideinleft {
+  from {
+    transform: translateX(-110%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slideinright {
+  0% {
+    transform: translateX(110%);
+  }
+  15% {
+    transform: translateX(110%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideinleft2 {
+  0% {
+    transform: translateX(-110%);
+  }
+  30% {
+    transform: translateX(-110%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideindown {
+  0% {
+    opacity: 0%;
+    transform: translateY(-25%);
+  }
+  20% {
+    opacity: 0%;
+    transform: translateY(-25%);
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes slideinup {
+  0% {
+    opacity: 0%;
+    transform: translateY(25%);
+  }
+  30% {
+    opacity: 0%;
+    transform: translateY(25%);
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes slideindowndelay {
+  0% {
+    opacity: 0%;
+    transform: translateY(-25%);
+  }
+  40% {
+    opacity: 0%;
+    transform: translateY(-25%);
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes circleappear2 {
+  0% {
+    opacity: 10%;
+    height: 20vw;
+    width: 20vw;
+    border-radius: 100%;
+    scale: 60%;
+  }
+  25% {
+    opacity: 2%;
+    border-radius: 100%;
+  }
+}
+header nav ul li:nth-child(4) a button p {
+  text-decoration: underline;
+}
 
+main {
+  padding-top: 5.7vw;
+  background-color: #1d1c19;
+}
+
+.herosect {
+  background-color: #1d1c19;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4.7vw 0;
+  row-gap: 4vw;
+  color: #fffdce;
+  font-family: "InstrumentSarif";
+}
+.herosect > h3 {
+  font-size: 2.3vw;
+  font-weight: 400;
+}
+.herosect .gridsect {
+  display: grid;
+  grid-template-columns: repeat(3, 30.6%);
+  gap: 2%;
+  justify-content: center;
+}
+.herosect .gridsect .card {
+  width: 100%;
+  overflow: hidden;
+  border: 0.06vw solid rgba(255, 253, 206, 0.3058823529);
+  border-radius: 14vw 14vw 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.8vw;
+  padding-bottom: 2.4vw;
+}
+.herosect .gridsect .card > div {
+  overflow: hidden;
+  height: 34vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.4vw;
+}
+.herosect .gridsect .card > div img {
+  transition: 0.4s ease-out;
+  object-fit: cover;
+}
+.herosect .gridsect .card h3 {
+  font-size: 1.7vw;
+  font-weight: 400;
+}
+.herosect .gridsect .card > p {
+  font-size: 1.16vw;
+}
+.herosect .gridsect .card a {
+  color: #fffdce;
+}
+.herosect .gridsect .card a p {
+  font-size: 1.16vw;
+}
+.herosect .gridsect .card a:hover {
+  text-decoration: none;
+}
+.herosect .gridsect .card a button {
+  background-color: #fffdce;
+  color: #1d1c19;
+  padding: 0.7vw 4.5vw;
+  border: none;
+  border-radius: 50vw;
+  font-family: "InstrumentSarif";
+  font-size: 1.16vw;
+  margin-top: 0.8vw;
+  cursor: pointer;
+}
+.herosect .gridsect .card a button:hover {
+  text-decoration: underline;
+}
+.herosect .gridsect .card:hover {
+  cursor: pointer;
+}
+.herosect .gridsect .card:hover > div img {
+  scale: 110%;
+}
 
 /*# sourceMappingURL=4events.css.map */
