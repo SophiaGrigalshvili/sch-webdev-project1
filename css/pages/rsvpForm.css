@@ -1,3 +1,373 @@
+@font-face {
+  font-family: "InstrumentSarif";
+  src: url(/scss/fonts/InstrumentSerif-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "PinyonScript";
+  src: url(/scss/fonts/PinyonScript-Regular.ttf);
+  font-weight: 700;
+}
+@keyframes circleappear {
+  from {
+    opacity: 100%;
+    border-width: 40vw;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+@keyframes circleappear2 {
+  0% {
+    opacity: 10%;
+    height: 20vw;
+    width: 20vw;
+    border-radius: 100%;
+    scale: 60%;
+  }
+  25% {
+    opacity: 2%;
+    border-radius: 100%;
+  }
+}
+@keyframes opacityappear {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes opacityappear2 {
+  0% {
+    opacity: 0%;
+  }
+  30% {
+    opacity: 0%;
+    scale: 90%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes textsquish {
+  from {
+    opacity: 40%;
+    transform: scaleY(30%);
+  }
+  to {
+    transform: scaleY(100%);
+  }
+}
+@keyframes textsquishdelay {
+  0% {
+    opacity: 0%;
+    transform: scaleY(30%);
+  }
+  20% {
+    opacity: 0%;
+    transform: scaleY(30%);
+  }
+  100% {
+    opacity: 100%;
+    transform: scaleY(100%);
+  }
+}
+@keyframes textsquishdelay2 {
+  0% {
+    opacity: 0%;
+    transform: scaleY(30%);
+  }
+  30% {
+    opacity: 0%;
+    transform: scaleY(30%);
+  }
+  100% {
+    opacity: 100%;
+    transform: scaleY(100%);
+  }
+}
+@keyframes slideinleft {
+  from {
+    transform: translateX(-120%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slideinleft2 {
+  0% {
+    transform: translateX(-120%);
+  }
+  30% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideinleft3 {
+  0% {
+    transform: translateX(-120%);
+  }
+  50% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideinright {
+  0% {
+    transform: translateX(110%);
+  }
+  15% {
+    transform: translateX(110%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideindown {
+  0% {
+    opacity: 0%;
+    transform: translateY(-25%);
+  }
+  20% {
+    opacity: 0%;
+    transform: translateY(-25%);
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes slideindowndelay {
+  0% {
+    opacity: 0%;
+    transform: translateY(-25%);
+  }
+  40% {
+    opacity: 0%;
+    transform: translateY(-25%);
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes slideindowndela2 {
+  0% {
+    opacity: 0%;
+    transform: translateY(-25%);
+  }
+  54% {
+    opacity: 0%;
+    transform: translateY(-25%);
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes slideinup {
+  0% {
+    opacity: 0%;
+    transform: translateY(25%);
+  }
+  30% {
+    opacity: 0%;
+    transform: translateY(25%);
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes slideinup2 {
+  0% {
+    opacity: 0%;
+    transform: translateY(25%);
+  }
+  42% {
+    opacity: 0%;
+    transform: translateY(25%);
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes slideinup3 {
+  0% {
+    opacity: 0%;
+    transform: translateY(25%);
+  }
+  54% {
+    opacity: 0%;
+    transform: translateY(25%);
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+main {
+  padding-top: 5.7vw;
+  background-color: #1d1c19;
+}
 
+.formsect {
+  padding: 6vw 0;
+  display: flex;
+  justify-content: center;
+  column-gap: 3%;
+  color: #fffdce;
+  font-family: "InstrumentSarif";
+  animation: textsquish 0.5s;
+}
+.formsect form {
+  display: flex;
+  flex-direction: column;
+  width: 38%;
+  row-gap: 1.4vw;
+}
+.formsect form h3 {
+  font-size: 2.3vw;
+  font-weight: 400;
+}
+.formsect form > div {
+  display: flex;
+  column-gap: 3%;
+}
+.formsect form > div .inputfield {
+  width: 50%;
+}
+.formsect form .inputfield {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.6vw;
+}
+.formsect form .inputfield label {
+  font-size: 1.2vw;
+}
+.formsect form .inputfield input {
+  width: 100%;
+  background-color: transparent;
+  border: 0.06vw solid #fffdce;
+  outline: none;
+  caret-color: #fffdce;
+  font-size: 1.34vw;
+  color: #fffdce;
+  padding: 0.76vw;
+}
+.formsect form > input {
+  background-color: transparent;
+  color: #fffdce;
+  padding: 1.1vw;
+  border: 0.06vw solid #fffdce;
+  border-radius: 50vw;
+  font-size: 1vw;
+  font-family: "InstrumentSarif";
+  padding-top: 1vw;
+  transition: 0.3s;
+}
+.formsect form > input:hover {
+  cursor: pointer;
+  color: #1d1c19;
+  background-color: #fffdce;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.formsect > div {
+  border: 0.06vw solid #fffdce;
+  height: fit-content;
+  width: fit-content;
+  padding: 1.4vw;
+}
+.formsect > div h3 {
+  font-size: 1.7vw;
+  width: 90%;
+  font-weight: 400;
+  padding-bottom: 0.7vw;
+}
+.formsect > div p {
+  font-size: 1.34vw;
+}
+
+@media (max-width: 1024px) {
+  .formsect {
+    padding: 8vw 0;
+  }
+  .formsect form {
+    width: 50%;
+    row-gap: 3.2vw;
+  }
+  .formsect form h3 {
+    font-size: 4.6vw;
+  }
+  .formsect form .inputfield {
+    row-gap: 1.2vw;
+  }
+  .formsect form .inputfield label {
+    font-size: 2.2vw !important;
+  }
+  .formsect form .inputfield input {
+    font-size: 2.9vw;
+    color: #fffdce;
+    padding: 0.9vw 1.7vw;
+  }
+  .formsect form > input {
+    font-size: 2.9vw;
+  }
+  .formsect > div {
+    width: 37%;
+    padding: 1.9vw;
+  }
+  .formsect > div h3 {
+    font-size: 3.8vw;
+    width: 100%;
+    padding-bottom: 2vw;
+  }
+  .formsect > div p {
+    width: fit-content;
+    font-size: 2.9vw;
+  }
+}
+@media (max-width: 768px) {
+  .formsect {
+    flex-direction: column-reverse;
+    padding: 19vw 11%;
+    row-gap: 10vw;
+  }
+  .formsect > div {
+    width: 100%;
+    padding: 4vw;
+  }
+  .formsect > div h3 {
+    font-size: 7.4vw;
+    padding-bottom: 3.8vw;
+  }
+  .formsect > div p {
+    font-size: 4.1vw;
+  }
+  .formsect form {
+    width: 100%;
+    row-gap: 5.3vw;
+  }
+  .formsect form h3 {
+    font-size: 7.4vw;
+  }
+  .formsect form .inputfield {
+    row-gap: 3.8vw;
+  }
+  .formsect form .inputfield label {
+    font-size: 4.1vw !important;
+  }
+  .formsect form .inputfield input {
+    font-size: 4.1vw;
+    color: #fffdce;
+    padding: 2vw 2.8vw;
+  }
+  .formsect form > input {
+    font-size: 4.1vw;
+    padding: 2.7vw;
+    margin-top: 1.7vw;
+  }
+}
 
 /*# sourceMappingURL=rsvpForm.css.map */

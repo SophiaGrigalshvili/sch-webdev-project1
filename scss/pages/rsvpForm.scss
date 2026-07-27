@@ -1,0 +1,208 @@
+@use "../abstracts/veriables.scss" as *;
+@use "../abstracts/mixin.scss" as *;
+@use "../abstracts/base.scss" as *;
+@use "../abstracts/animations.scss" as *;
+
+main {
+  padding-top: 5.7vw;
+  background-color: $bg-color-dark;
+}
+
+.formsect {
+  padding: 6vw 0;
+  display: flex;
+  justify-content: center;
+  column-gap: 3%;
+
+  color: $text-color-light;
+  font-family: $font-main;
+
+  animation: textsquish 0.5s;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+    row-gap: 1.4vw;
+
+    h3 {
+      font-size: $text-size-p-alt;
+      font-weight: 400;
+    }
+
+    > div {
+      display: flex;
+      column-gap: 3%;
+
+      .inputfield {
+        width: 50%;
+      }
+    }
+
+    .inputfield {
+      display: flex;
+      flex-direction: column;
+
+      row-gap: 0.6vw;
+
+      label {
+        font-size: 1.2vw;
+      }
+
+      input {
+        width: 100%;
+
+        background-color: transparent;
+        border: 0.06vw solid $text-color-light;
+        outline: none;
+        caret-color: $text-color-light;
+        font-size: $text-size-main;
+        color: $text-color-light;
+
+        padding: 0.76vw;
+      }
+    }
+
+    > input {
+      @include btn-mx(
+        transparent,
+        $text-color-light,
+        1.1vw,
+        0.06vw solid $text-color-light,
+        50vw
+      );
+      font-size: 1vw;
+      font-family: $font-main;
+      padding-top: 1vw;
+
+      transition: 0.3s;
+
+      &:hover {
+        cursor: pointer;
+        color: $text-color-dark;
+        background-color: $text-color-light;
+        font-weight: 700;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  > div {
+    border: 0.06vw solid $text-color-light;
+    height: fit-content;
+    width: fit-content;
+    padding: 1.4vw;
+
+    h3 {
+      font-size: $text-size-h3-alt;
+      width: 90%;
+      font-weight: 400;
+
+      padding-bottom: 0.7vw;
+    }
+    p {
+      font-size: $text-size-main;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .formsect {
+    padding: 8vw 0;
+
+    form {
+      width: 50%;
+      row-gap: 3.2vw;
+
+      h3 {
+        font-size: $resp-text-size-h3;
+      }
+
+      .inputfield {
+        row-gap: 1.2vw;
+
+        label {
+          font-size: 2.2vw !important;
+        }
+
+        input {
+          font-size: $resp-text-size-main;
+          color: $text-color-light;
+          padding: 0.9vw 1.7vw;
+        }
+      }
+
+      > input {
+        font-size: $resp-text-size-main;
+      }
+    }
+
+    > div {
+      width: 37%;
+      padding: 1.9vw;
+      h3 {
+        font-size: 3.8vw;
+        width: 100%;
+        padding-bottom: 2vw;
+      }
+
+      p {
+        width: fit-content;
+        font-size: $resp-text-size-main;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .formsect {
+    flex-direction: column-reverse;
+    padding: 19vw 11%;
+
+    row-gap: 10vw;
+
+    > div {
+      width: 100%;
+      padding: 4vw;
+
+      h3 {
+        font-size: $resp2-text-size-h3;
+        padding-bottom: 3.8vw;
+      }
+
+      p {
+        font-size: $resp2-text-size-main;
+      }
+    }
+
+    form {
+      width: 100%;
+      row-gap: 5.3vw;
+
+      h3 {
+        font-size: $resp2-text-size-h3;
+      }
+
+      .inputfield {
+        row-gap: 3.8vw;
+
+        label {
+          font-size: $resp2-text-size-main !important;
+        }
+
+        input {
+          font-size: $resp2-text-size-main;
+          color: $text-color-light;
+          padding: 2vw 2.8vw;
+        }
+      }
+
+      > input {
+        font-size: $resp2-text-size-main;
+        padding: 2.7vw;
+
+        margin-top: 1.7vw;
+      }
+    }
+  }
+}
