@@ -108,11 +108,16 @@ main {
         border-bottom: 0.06vw solid $text-color-light;
         caret-color: $text-color-light;
         padding: 0.7vw;
+        color: $text-color-light;
+        font-family: $font-main;
+        font-size: $text-size-main;
       }
 
       textarea {
         resize: none;
         height: 6.4vw;
+        font-family: $font-main;
+        font-size: $text-size-main;
       }
     }
 

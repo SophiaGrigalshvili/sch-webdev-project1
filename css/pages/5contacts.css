@@ -287,10 +287,15 @@ main {
   border-bottom: 0.06vw solid #fffdce;
   caret-color: #fffdce;
   padding: 0.7vw;
+  color: #fffdce;
+  font-family: "InstrumentSarif";
+  font-size: 1.34vw;
 }
 .formsect form .inputfield textarea {
   resize: none;
   height: 6.4vw;
+  font-family: "InstrumentSarif";
+  font-size: 1.34vw;
 }
 .formsect form > input {
   border: 0.06vw solid #fffdce;

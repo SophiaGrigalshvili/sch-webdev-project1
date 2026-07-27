@@ -253,6 +253,7 @@ main {
   caret-color: #fffdce;
   font-size: 1.34vw;
   color: #fffdce;
+  font-family: "InstrumentSarif";
   padding: 0.76vw;
 }
 .formsect form > input {
