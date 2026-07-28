@@ -69,15 +69,17 @@ main {
   color: $text-color-light;
   font-family: $font-main;
 
+  overflow: hidden;
+
+  img {
+    width: 40%;
+  }
+
   > div {
     @include card-mx(100%, auto, 1.6vw, $bg-color-dark);
 
     display: flex;
     column-gap: 3%;
-
-    img {
-      width: 90%;
-    }
 
     div {
       display: flex;
@@ -104,10 +106,6 @@ main {
     flex-direction: row-reverse;
     background-color: $bg-color-green;
 
-    img {
-      width: 100%;
-    }
-
     animation: slideinright 1.7s ease-out;
   }
 
@@ -131,10 +129,6 @@ main {
     > div {
       padding: 2.3vw;
 
-      img {
-        width: 165%;
-      }
-
       h2 {
         font-size: $resp-text-size-h2 !important;
         width: 100% !important;
@@ -143,11 +137,6 @@ main {
       p {
         font-size: 2.3vw !important;
         width: 90% !important;
-      }
-    }
-    > div:nth-child(2) {
-      img {
-        width: 165%;
       }
     }
   }
@@ -171,16 +160,15 @@ main {
     padding: 5.6vw 5%;
 
     row-gap: 4.7vw;
+
+    img {
+      width: 100%;
+    }
     > div {
       flex-direction: column;
       padding: 5.6vw;
 
       row-gap: 5.6vw;
-
-      img {
-        width: 100%;
-      }
-
       div {
         row-gap: 2.8vw;
 
